@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Apr 24 10:40:05 2015
+# Process ID: 5340
+# Log file: C:/Users/Administrator/Desktop/Demo/nes/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/Demo/nes\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/Demo/nes/nes.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592585A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592585A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/Demo/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {C:/Users/Administrator/Desktop/Demo/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {C:/Users/Administrator/Desktop/Demo/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/Demo/bit/CPU_PPU_CHIP_TEST.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1

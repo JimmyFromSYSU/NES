@@ -1,0 +1,1236 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+Process ID: 15456
+
+Current time: 	4/22/15 8:51:57 AM
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.4/tps/win64/jre
+
+User name: 	nfxz
+User directory: C:/Users/nfxz/Desktop/Project/FPGA/nes
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+Vivado preferences path: C:/Users/nfxz/AppData/Roaming/Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: C:/Users/nfxz/AppData/Roaming/Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	139 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 346 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.xpr 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// [GUI Memory]: 48 MB (+47847kb) [00:00:05]
+// [Engine Memory]: 342 MB (+206756kb) [00:00:05]
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 394 MB. GUI used memory: 30 MB. Current time: 4/22/15 8:51:59 AM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 50 MB (+1690kb) [00:00:10]
+// [Engine Memory]: 405 MB (+66396kb) [00:00:10]
+// [Engine Memory]: 412 MB (+7757kb) [00:00:10]
+// [Engine Memory]: 438 MB (+26484kb) [00:00:10]
+// [Engine Memory]: 459 MB (+22269kb) [00:00:12]
+// [Engine Memory]: 475 MB (+16838kb) [00:00:13]
+// [GUI Memory]: 54 MB (+4126kb) [00:00:13]
+// Tcl Message: open_project C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'. 
+// [GUI Memory]: 56 MB (+2981kb) [00:00:14]
+// [Engine Memory]: 476 MB (+675kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 57 MB (+503kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 58 MB (+848kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 58 MB (+866kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 59 MB (+848kb) [00:00:15]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Project name: nes; location: C:/Users/nfxz/Desktop/Project/FPGA/nes; part: xc7a100tcsg324-1
+// [GUI Memory]: 62 MB (+2875kb) [00:00:16]
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 684.387 ; gain = 120.230 
+// [Engine Memory]: 476 MB (+700kb) [00:00:17]
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// [Engine Memory]: 478 MB (+1490kb) [00:00:17]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 480 MB (+2322kb) [00:00:17]
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 483 MB (+3223kb) [00:00:18]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 483 MB (+45kb) [00:00:18]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// a:a (ch:JFrame): Critical Messages: addNotify
+// [GUI Memory]: 66 MB (+3727kb) [00:00:19]
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 69 MB (+3505kb) [00:00:19]
+// [Engine Memory]: 487 MB (+4108kb) [00:00:19]
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+// [GUI Memory]: 72 MB (+2711kb) [00:00:33]
+// [GUI Memory]: 76 MB (+4987kb) [00:00:34]
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv)]", 2); // u:k (I:JPanel, ch:JFrame)
+// [GUI Memory]: 79 MB (+2839kb) [00:00:42]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv), bi - button_input (button_input.sv)]", 13, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv), bi - button_input (button_input.sv)]", 13, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectCodeEditor("button_input.sv", 72, 194); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 23, 193); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 19, 194); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 24, 248); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 5, 217); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 81 MB (+2065kb) [00:01:04]
+selectCodeEditor("button_input.sv", 123, 255); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 121, 255); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "button_input.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("button_input.sv", 202, 261); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 84 MB (+3403kb) [00:01:13]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("button_input.sv", 217, 223); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 127, 160); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("button_input.sv", 162, 165); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("button_input.sv", 148, 191); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("button_input.sv", 233, 228); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv), bi - button_input (button_input.sv), testfsm - joystick_FSM (control.sv)]", 17, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv), bi - button_input (button_input.sv), testfsm - joystick_FSM (control.sv)]", 17, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 488 MB (+1589kb) [00:01:55]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "button_input.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 489 MB (+208kb) [00:01:56]
+// [Engine Memory]: 490 MB (+1466kb) [00:01:57]
+// [Engine Memory]: 491 MB (+864kb) [00:02:02]
+// [Engine Memory]: 496 MB (+5156kb) [00:02:21]
+// HMemoryUtils.trashcanNow. Engine heap size: 496 MB. GUI used memory: 42 MB. Current time: 4/22/15 8:54:14 AM
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joystick (joystick.sv)]", 24, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joystick (joystick.sv)]", 24, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 497 MB (+1712kb) [00:02:26]
+selectCodeEditor("joystick.sv", 188, 106); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 188, 106, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "MISO", true); // l:an (c:JComboBox, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "button_input.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "button_input.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// Elapsed time: 84 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("joystick.sv", 187, 277); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 187, 277, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "MOSI", true); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "MOSI"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "MOSI"); // l:an (c:JComboBox, ch:JFrame)
+// [GUI Memory]: 86 MB (+2287kb) [00:04:55]
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "MOSI"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "MOSI"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "MOSI"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "MOSI"); // l:an (c:JComboBox, ch:JFrame)
+selectCodeEditor("joystick.sv", 224, 167); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 218, 189); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 87 MB (+231kb) [00:05:07]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "button_input.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 498 MB (+925kb) [00:05:09]
+// [Engine Memory]: 503 MB (+4440kb) [00:05:09]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv)]", 2, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv)]", 2, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 328, 227); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 82, 258); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 89 MB (+2371kb) [00:05:24]
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "button_input.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("button_input.sv", 204, 202); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "button_input.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 204, 202); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "button_input.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 90 MB (+1584kb) [00:05:40]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CPU_PPU_CHIP_TEST.sv", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 345, 154); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 268, 157); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 144, 164); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 144, 164, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 198, 192); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 233, 188); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 217, 219); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 217, 219, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 216, 255); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 216, 255, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 198, 195); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 201, 226); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 197, 250); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 213, 258); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 213, 258); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 203, 275); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 90, 285); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "CPU_PPU_CHIP_TEST.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 22 08:58:37 2015] Launched synth_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/synth_1/runme.log [Wed Apr 22 08:58:37 2015] Launched impl_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [GUI Memory]: 91 MB (+964kb) [00:06:48]
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 505 MB (+2183kb) [00:07:57]
+// TclEventType: RUN_STEP_COMPLETED
+// [Engine Memory]: 505 MB (+98kb) [00:08:26]
+// [GUI Memory]: 92 MB (+992kb) [00:08:41]
+// [Engine Memory]: 505 MB (+86kb) [00:09:51]
+// [Engine Memory]: 505 MB (+303kb) [00:10:06]
+// [Engine Memory]: 505 MB (+40kb) [00:10:16]
+// TclEventType: RUN_COMPLETED
+// [Engine Memory]: 506 MB (+528kb) [00:10:23]
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 219 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// cm:N (ch:JFrame):  Open Implemented Design : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 536 MB. GUI used memory: 50 MB. Current time: 4/22/15 9:02:19 AM
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 766 MB (+273268kb) [00:10:33]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 783 MB (+17674kb) [00:10:35]
+// [Engine Memory]: 783 MB (+16kb) [00:10:35]
+// [Engine Memory]: 783 MB (+53kb) [00:10:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 784 MB. GUI used memory: 51 MB. Current time: 4/22/15 9:02:26 AM
+// [Engine Memory]: 785 MB (+2269kb) [00:10:35]
+// [Engine Memory]: 801 MB (+16617kb) [00:10:35]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi.loadEngineXgd elapsed time: 1.2s
+// [Engine Memory]: 880 MB (+82661kb) [00:10:37]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 880 MB (+458kb) [00:10:40]
+// [Engine Memory]: 881 MB (+122kb) [00:10:40]
+// [Engine Memory]: 883 MB (+2920kb) [00:10:40]
+// [Engine Memory]: 884 MB (+692kb) [00:10:40]
+// Device: addNotify
+// [Engine Memory]: 889 MB (+5193kb) [00:10:40]
+// [Engine Memory]: 890 MB (+1417kb) [00:10:40]
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 152 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2014.4 
+// Tcl Message: Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml... Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/nfxz/Desktop/Project/FPGA/nes/.Xil/Vivado-15456-nfxz-pc/dcp/CPU_PPU_CHIP_TEST.xdc] Finished Parsing XDC File [C:/Users/nfxz/Desktop/Project/FPGA/nes/.Xil/Vivado-15456-nfxz-pc/dcp/CPU_PPU_CHIP_TEST.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 957.699 ; gain = 4.695 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 957.699 ; gain = 4.695 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1071.305 ; gain = 377.137 
+// [Engine Memory]: 908 MB (+18345kb) [00:10:41]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 914 MB (+6369kb) [00:10:41]
+// 'dg' command handler elapsed time: 12 seconds
+// [GUI Memory]: 96 MB (+3429kb) [00:10:41]
+// [Engine Memory]: 917 MB (+3043kb) [00:10:41]
+// Device view-level: 0.0
+// [Engine Memory]: 928 MB (+11509kb) [00:10:41]
+// [Engine Memory]: 930 MB (+1884kb) [00:10:41]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 931 MB (+1179kb) [00:10:42]
+// [Engine Memory]: 931 MB (+159kb) [00:10:42]
+// [Engine Memory]: 931 MB (+446kb) [00:10:42]
+// [GUI Memory]: 104 MB (+8563kb) [00:10:42]
+// [Engine Memory]: 932 MB (+1331kb) [00:10:42]
+// Elapsed time: 13 seconds
+dismissDialog("Open Implemented Design"); // cm:N (ch:JFrame)
+// [Engine Memory]: 940 MB (+7532kb) [00:10:42]
+// [GUI Memory]: 107 MB (+3039kb) [00:10:42]
+// [Engine Memory]: 947 MB (+8179kb) [00:10:43]
+// [Engine Memory]: 949 MB (+1740kb) [00:10:43]
+// [Engine Memory]: 949 MB (+299kb) [00:10:43]
+// [Engine Memory]: 950 MB (+122kb) [00:10:43]
+// [Engine Memory]: 952 MB (+2498kb) [00:10:43]
+// [Engine Memory]: 960 MB (+8335kb) [00:10:44]
+// [Engine Memory]: 969 MB (+9703kb) [00:10:44]
+// [Engine Memory]: 970 MB (+946kb) [00:10:45]
+// [Engine Memory]: 970 MB (+110kb) [00:10:45]
+// [Engine Memory]: 973 MB (+3006kb) [00:10:46]
+// [Engine Memory]: 977 MB (+4206kb) [00:10:46]
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 34); // w:Y (v:I, ch:JFrame)
+// [GUI Memory]: 110 MB (+3318kb) [00:10:47]
+// [Engine Memory]: 989 MB (+12550kb) [00:10:47]
+// [GUI Memory]: 110 MB (+448kb) [00:10:47]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 35, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// [GUI Memory]: 118 MB (+8419kb) [00:10:48]
+selectMenuItem((HResource) null, "localhost:3121,xilinx_tcf/Digilent/210274592585A,PARAM.FREQUENCY:15000000"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// [Engine Memory]: 992 MB (+3444kb) [00:10:49]
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// cm:N (ch:JFrame):  Open Hardware Target : addNotify
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 995 MB. GUI used memory: 85 MB. Current time: 4/22/15 9:02:40 AM
+// [Engine Memory]: 996 MB (+3698kb) [00:10:50]
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 996 MB (+544kb) [00:10:50]
+// [Engine Memory]: 998 MB (+2179kb) [00:10:50]
+// Tcl Message: open_hw 
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2014.4   **** Build date : Nov 18 2014-18:09:44     ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application   ****** Xilinx hw_server v2014.4   **** Build date : Nov 18 2014-18:09:44     ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592585A] 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592585A] 
+// [Engine Memory]: 1,310 MB (+326320kb) [00:10:54]
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274592585A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.bit} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// RouteApi.initDelayMediator elapsed time: 13.6s
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,313 MB (+3239kb) [00:10:55]
+dismissDialog("Open Hardware Target"); // cm:N (ch:JFrame)
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 36, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// [GUI Memory]: 121 MB (+2848kb) [00:11:18]
+// [Engine Memory]: 1,313 MB (+225kb) [00:11:18]
+// [Engine Memory]: 1,326 MB (+13946kb) [00:11:19]
+selectMenuItem((HResource) null, "xc7a100t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// [Engine Memory]: 1,328 MB (+1867kb) [00:11:19]
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// [GUI Memory]: 124 MB (+3365kb) [00:11:25]
+// [GUI Memory]: 127 MB (+3416kb) [00:11:30]
+// [GUI Memory]: 128 MB (+138kb) [00:11:35]
+// [GUI Memory]: 128 MB (+806kb) [00:11:40]
+// [GUI Memory]: 128 MB (+160kb) [00:11:45]
+// [GUI Memory]: 128 MB (+37kb) [00:11:50]
+// Elapsed time: 50 seconds
+selectCodeEditor("button_input.sv", 387, 150); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 130 MB (+1298kb) [00:12:29]
+// Elapsed time: 21 seconds
+selectCodeEditor("button_input.sv", 198, 124); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectCodeEditor("button_input.sv", 167, 189); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 167, 189, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+// Elapsed time: 58 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 22 09:05:38 2015] Launched synth_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/synth_1/runme.log [Wed Apr 22 09:05:38 2015] Launched impl_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+// [GUI Memory]: 131 MB (+849kb) [00:13:53]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 267 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // Q:al (ch:JFrame)
+// [GUI Memory]: 131 MB (+834kb) [00:18:18]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 36, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// [GUI Memory]: 132 MB (+580kb) [00:18:26]
+// [GUI Memory]: 133 MB (+886kb) [00:18:31]
+// [GUI Memory]: 133 MB (+181kb) [00:18:36]
+// Elapsed time: 41 seconds
+selectCodeEditor("button_input.sv", 304, 109); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 136 MB (+2780kb) [00:19:15]
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CPU_PPU_CHIP_TEST.sv", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 160, 280); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "button_input.sv", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("button_input.sv", 354, 254); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 315, 352); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 315, 352, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("button_input.sv", 320, 367); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 320, 367, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+// Elapsed time: 65 seconds
+selectCodeEditor("button_input.sv", 224, 159); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 224, 159, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "button_input.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_390K", true); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_390K"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_390K"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_390K"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_390K"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk_390K"); // l:an (c:JComboBox, ch:JFrame)
+// Elapsed time: 33 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // Z:JMenuItem (JPopupMenu:JComponent, ch:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+closeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // al:DockableFrame (FrameContainer:JideTabbedPane, ch:JFrame)
+closeFrame(RDIResource.RDIViews_PROPERTIES, "Hardware Device Properties"); // al:DockableFrame (FrameContainer:JideTabbedPane, ch:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv)]", 2); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv), bi - button_input (button_input.sv)]", 13, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv), bi - button_input (button_input.sv)]", 13, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv), bi - button_input (button_input.sv), gfc - get_fetch_clk (joystick.sv)]", 15, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv), bi - button_input (button_input.sv), gfc - get_fetch_clk (joystick.sv)]", 15, false, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click
+selectCodeEditor("joystick.sv", 99, 281); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 136 MB (+671kb) [00:22:56]
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("joystick.sv", 306, 371); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 139 MB (+2423kb) [00:23:18]
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CPU_PPU_CHIP_TEST.sv", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [GUI Memory]: 139 MB (+47kb) [00:23:20]
+// [Engine Memory]: 1,329 MB (+704kb) [00:23:20]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [GUI Memory]: 140 MB (+1491kb) [00:23:23]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "button_input.sv", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CPU_PPU_CHIP_TEST.sv", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,346 MB (+17723kb) [00:23:31]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 92 MB. Current time: 4/22/15 9:15:24 AM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// Elapsed time: 33 seconds
+selectCodeEditor("joystick.sv", 172, 258); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 172, 258, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "start", true); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "start"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "start"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "start"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "start"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "start"); // l:an (c:JComboBox, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "button_input.sv", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "start", true); // l:an (c:JComboBox, ch:JFrame)
+selectCodeEditor("button_input.sv", 441, 78); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "button_input.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "button_input.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("joystick.sv", 68, 129); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "joystick.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "button_input.sv", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("button_input.sv", 32, 252); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "button_input.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "button_input.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+typeControlKey((HResource) null, "joystick.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("joystick.sv", 303, 161); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("joystick.sv", 278, 279); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 222, 283); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("joystick.sv", 381, 286); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv)]", 2); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joy_data (joy_data.sv)]", 13, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joystick (joystick.sv)]", 3, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, joystick (joystick.sv)]", 3, true, false, false, false, true, false); // u:k (I:JPanel, ch:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // W:JMenu (ag:JPopupMenu, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top joystick [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 22 09:17:13 2015] Launched synth_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/synth_1/runme.log [Wed Apr 22 09:17:13 2015] Launched impl_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+selectCodeEditor("joystick.sv", 113, 240); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 23 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, ch:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectButton("PAResourceQtoS.StateMonitor_YOU_ABOUT_TO_CANCEL_YOUR_RUNNING_Delete Files", "Delete Files"); // JButton:AbstractButton (JPanel:JComponent, Q:JDialog)
+// Tcl Message: reset_run synth_1 
+selectCodeEditor("joystick.sv", 285, 369); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 22 09:17:47 2015] Launched synth_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/synth_1/runme.log [Wed Apr 22 09:17:47 2015] Launched impl_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 142 MB (+2134kb) [00:26:25]
+// TclEventType: RUN_STEP_COMPLETED
+// ak:a (ch:JFrame): Launch Run Critical Messages: addNotify
+// Elapsed time: 46 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, ak:a)
+dismissDialog("Launch Run Critical Messages"); // ak:a (ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 151 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // Q:al (ch:JFrame)
+// Elapsed time: 159 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 36, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// HOptionPane Error: "The file 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.bit'does not exist.Please specify a valid file name. (Invalid File Name)"
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, R:JDialog)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, aC:ac)
+// 'p' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Wed Apr 22 09:23:56 2015] Launched impl_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 148 MB (+6555kb) [00:32:42]
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 65 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // Q:al (ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 36, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q:a (aO:JPanel, aC:ac)
+setFileChooser("C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/joystick.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/joystick.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// [Engine Memory]: 1,347 MB (+1101kb) [00:33:21]
+// [Engine Memory]: 1,347 MB (+40kb) [00:33:26]
+// [Engine Memory]: 1,347 MB (+303kb) [00:33:31]
+// [Engine Memory]: 1,347 MB (+4kb) [00:33:36]
+// [Engine Memory]: 1,347 MB (+4kb) [00:33:40]
+// [Engine Memory]: 1,353 MB (+6819kb) [00:33:42]
+// Elapsed time: 23 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sw", true); // l:an (c:JComboBox, ch:JFrame)
+// [Engine Memory]: 1,353 MB (+20kb) [00:33:47]
+selectCodeEditor("joystick.sv", 162, 485); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,353 MB (+4kb) [00:33:49]
+selectCodeEditor("joystick.sv", 162, 485, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("joystick.sv", 166, 467); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 166, 467, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+// [Engine Memory]: 1,353 MB (+16kb) [00:33:51]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CPU_PPU_CHIP_TEST.sv", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,358 MB (+4476kb) [00:33:52]
+// [Engine Memory]: 1,358 MB (+81kb) [00:33:52]
+// [GUI Memory]: 155 MB (+7511kb) [00:33:52]
+// [Engine Memory]: 1,358 MB (+352kb) [00:33:52]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("joystick.sv", 169, 428); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 73, 216); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("joystick.sv", 181, 215); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 180, 216, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 170, 432); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "joystick.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("joystick.sv", 84, 220); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 120, 304); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 119, 305, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "joystick.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 22 09:26:28 2015] Launched synth_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/synth_1/runme.log [Wed Apr 22 09:26:28 2015] Launched impl_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+selectCodeEditor("joystick.sv", 237, 116); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 399, 107); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 240, 125); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 310, 166); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 420, 197); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 365, 214); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 421, 183); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CPU_PPU_CHIP_TEST.sv", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,364 MB (+6639kb) [00:34:53]
+// [Engine Memory]: 1,365 MB (+315kb) [00:34:53]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,365 MB (+126kb) [00:34:55]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// [Engine Memory]: 1,365 MB (+20kb) [00:35:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,369 MB. GUI used memory: 95 MB. Current time: 4/22/15 9:26:55 AM
+// [Engine Memory]: 1,369 MB (+4194kb) [00:35:04]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "CPU_PPU_CHIP_TEST.sv", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("CPU_PPU_CHIP_TEST.sv", 105, 277); // bi:J (JPanel:JComponent, ch:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "button_input.sv", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+selectCodeEditor("button_input.sv", 112, 254); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 112, 254, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "button_input.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 161, 225); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: RUN_COMPLETED
+selectCodeEditor("button_input.sv", 333, 77); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,369 MB (+327kb) [00:35:16]
+selectCodeEditor("button_input.sv", 333, 77, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("button_input.sv", 92, 231); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "button_input.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// ak:a (ch:JFrame): Launch Run Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, ak:a)
+dismissDialog("Launch Run Critical Messages"); // ak:a (ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("button_input.sv", 170, 278); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 170, 278, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey((HResource) null, "button_input.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 180, 346); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 180, 346, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("button_input.sv", 223, 283); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("button_input.sv", 82, 410); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "button_input.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+selectCodeEditor("button_input.sv", 121, 340); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 121, 340, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("button_input.sv", 169, 344); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "button_input.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "button_input.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("button_input.sv", 152, 319); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("button_input.sv", 225, 313); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "joystick.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 35 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+// [Engine Memory]: 1,369 MB (+229kb) [00:36:52]
+dismissDialog("Bitstream Generation Completed"); // Q:al (ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 36, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/joystick.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 36, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// [Engine Memory]: 1,370 MB (+270kb) [00:37:12]
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/joystick.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// [Engine Memory]: 1,373 MB (+3866kb) [00:37:15]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("joystick.sv", 121, 277); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 346, 228); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 164, 353); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 164, 353, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 22 09:29:39 2015] Launched synth_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/synth_1/runme.log [Wed Apr 22 09:29:39 2015] Launched impl_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// ak:a (ch:JFrame): Launch Run Critical Messages: addNotify
+// Elapsed time: 39 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, ak:a)
+dismissDialog("Launch Run Critical Messages"); // ak:a (ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 79 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // Q:al (ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 36, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/joystick.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("joystick.sv", 187, 345); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 191, 228); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 191, 228, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 131, 312); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("joystick.sv", 131, 312, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+selectCodeEditor("joystick.sv", 169, 343); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "joystick.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "joystick.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH

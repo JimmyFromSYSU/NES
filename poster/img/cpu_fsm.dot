@@ -1,0 +1,68 @@
+digraph ppu_fsm{
+	bgcolor = snow;
+	subgraph cluster_main{
+		node [style=filled,color=wheat,shape="Mrecord"];
+		label = "Instruction FSM";
+		style=filled;
+		color=snow;
+		
+		CPU_RESET;
+		CPU_RESET_ADDR;
+		FETCH_INS;
+		ADDRESSING;
+		EXECUTE_INS;
+		SAVE_DATA;
+		NMI;
+		NMI_ADDR;	
+		DMA;
+		DMA_ADDR;
+		JMP;
+		DMA->DMA_ADDR;
+		DMA_ADDR->FETCH_INS;
+		NMI->NMI_ADDR;
+		NMI_ADDR->FETCH_INS;
+		CPU_RESET->CPU_RESET_ADDR;
+		CPU_RESET_ADDR->FETCH_INS;
+		FETCH_INS->ADDRESSING;
+		ADDRESSING->EXECUTE_INS;
+		EXECUTE_INS->SAVE_DATA;
+		SAVE_DATA->FETCH_INS[dir=both];
+		ADDRESSING->JMP;
+		JMP->FETCH_INS;
+		FETCH_INS->EXECUTE_INS;
+		{rank=same;SAVE_DATA;FETCH_INS;}
+		{rank=same;EXECUTE_INS;ADDRESSING;JMP;}
+	}
+		
+	subgraph cluster_palette{
+		node [style=filled,color=white,shape="Mrecord"];
+		label = "Addr FSM";
+		style=filled;
+		color=wheat;
+		Addr_WAIT;
+		ZeroPage_X_Y[label="Zeropage,ZeropageX,ZeroPageY..."];
+		Absolute_X_Y[label="Absolute,AbsoluteX,AbsoluteY..."];
+		Relative[label="Relative..."];
+		Indirect_X_Y[label="Indirect,IndirectX,IndirectY..."];
+		Addr_WAIT->ZeroPage_X_Y[dir=both];	
+		Addr_WAIT->Absolute_X_Y[dir=both];	
+		Addr_WAIT->Indirect_X_Y[dir=both];
+		Addr_WAIT->Relative[dir=both];
+		ZeroPage_X_Y->Absolute_X_Y[style=invis]
+		Absolute_X_Y->Indirect_X_Y[style=invis]
+		Indirect_X_Y->Relative[style=invis]
+		{rank=same;ZeroPage_X_Y;Addr_WAIT;}
+	}
+
+	//ADDRESSING->Addr_WAIT[color="green"];
+	//ZeroPage_X_Y->ADDRESSING[color="red",label="end addressing"];
+	//Absolute_X_Y->ADDRESSING[color="red",label="end addressing"];
+	//Indirect_X_Y->ADDRESSING[color="red",label="end addressing"];
+	//Relative->ADDRESSING[color="red",label="end addressing"];
+	ADDRESSING->Addr_WAIT[color="green3"];
+	ZeroPage_X_Y->ADDRESSING[color="red",label=""];
+	Absolute_X_Y->ADDRESSING[color="red",label=""];
+	Indirect_X_Y->ADDRESSING[color="red",label=""];
+	Relative->ADDRESSING[color="red",label=""];
+}
+

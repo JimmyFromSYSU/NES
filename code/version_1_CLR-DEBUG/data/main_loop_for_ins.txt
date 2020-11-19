@@ -1,0 +1,27 @@
+////////////// ADC,AND,BIT,EOR,ORA,SBC,
+////////////// ASL,LSR,ROL,ROR,
+////////////// DEC,DEX,DEY,INC,INX,INY,
+////////////// CMP,CPX,CPY,
+////////////// BCC, BCS,BEQ, BMI, BNE,BPL,BVC,BVS:
+fetch->jmp_1->fetch (without jmp)
+fetch->jmp_1->jmp_2->fetch (with jmp)
+////////////// JMP,JSR,
+////////////// BRK,
+////////////// RTI,
+////////////// RTS,
+////////////// CLC,CLD,CLI,CLV,SED,SEI,SEC
+fetch->execute->fetch
+
+////////////// LDA,LDX,LDY:
+fetch->execute->fetch (Imediate)
+fetch->load_data->execute->fetch
+
+////////////// STA,STX,STY: 
+fetch->save_data->fetch (Imediate)
+fetch->load_data->execute->fetch
+
+////////////// TAX,TAY,TSX,TXA,TXS,TYA,
+////////////// PHA,PHP,PLA,PLP,
+
+////////////// NOP: 
+fetch->fetch

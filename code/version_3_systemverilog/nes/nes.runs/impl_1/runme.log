@@ -1,0 +1,721 @@
+
+*** Running vivado
+    with args -log CPU_PPU_CHIP_TEST.vdi -applog -m64 -messageDb vivado.pb -mode batch -source CPU_PPU_CHIP_TEST.tcl -notrace
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source CPU_PPU_CHIP_TEST.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PROM_synth_1/PROM.dcp' for cell 'prom'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PRAM_synth_1/PRAM.dcp' for cell 'pram'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VROM_synth_1/VROM.dcp' for cell 'ppu_test/plb/vrom'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/OAM_synth_1/OAM.dcp' for cell 'ppu_test/oam'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/Palette_synth_1/Palette.dcp' for cell 'ppu_test/p'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/COLOR_TABLE_synth_1/COLOR_TABLE.dcp' for cell 'color_t'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VRAM_synth_1/VRAM.dcp' for cell 'ppu_test/vram'
+INFO: [Netlist 29-17] Analyzing 171 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+Finished Parsing XDC File [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PROM_synth_1/PROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PRAM_synth_1/PRAM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VROM_synth_1/VROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/OAM_synth_1/OAM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/Palette_synth_1/Palette.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/COLOR_TABLE_synth_1/COLOR_TABLE.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VRAM_synth_1/VRAM.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 468.539 ; gain = 282.309
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.144 . Memory (MB): peak = 470.402 ; gain = 1.863
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 2306eb682
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.371 . Memory (MB): peak = 959.461 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 164 cells.
+Phase 2 Constant Propagation | Checksum: 181b154b8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.746 . Memory (MB): peak = 959.461 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 673 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 15 unconnected cells.
+Phase 3 Sweep | Checksum: 24c5c9073
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 959.461 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 24c5c9073
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 959.461 ; gain = 0.000
+Implement Debug Cores | Checksum: 1819fd0d4
+Logic Optimization | Checksum: 1819fd0d4
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 15 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 3 Total Ports: 30
+Ending PowerOpt Patch Enables Task | Checksum: 119cd104a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 119cd104a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1018.844 ; gain = 59.383
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1018.844 ; gain = 550.305
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1018.844 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST_drc_opted.rpt.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: e13ef331
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1018.844 ; gain = 0.000
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1.1 Pre-Place Cells
+Phase 2.1.1.1 Pre-Place Cells | Checksum: ca4a7525
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.349 . Memory (MB): peak = 1018.844 ; gain = 0.000
+WARNING: [Place 30-568] A LUT 'cpu_test/m_fsm/dout_reg[7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	cpu_test/m_fsm/dout_reg[0] {LDCE}
+	cpu_test/m_fsm/dout_reg[1] {LDCE}
+	cpu_test/m_fsm/dout_reg[2] {LDCE}
+	cpu_test/m_fsm/dout_reg[3] {LDCE}
+	cpu_test/m_fsm/dout_reg[4] {LDCE}
+WARNING: [Place 30-568] A LUT 'cpu_test/m_fsm/fetch_BUFG_inst_i_1' is driving clock pin of 16 registers. This could lead to large hold time violations. First few involved registers are:
+	count_reg[0] {FDRE}
+	count_reg[10] {FDRE}
+	count_reg[11] {FDRE}
+	count_reg[12] {FDRE}
+	count_reg[13] {FDRE}
+WARNING: [Place 30-568] A LUT 'cpu_test/m_fsm/nmi_status_i_1' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	cpu_test/m_fsm/nmi_status_reg {FDPE}
+WARNING: [Place 30-568] A LUT 'vs/chv/ch/h_s/flag_i_2' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/flag_reg {FDCE}
+WARNING: [Place 30-568] A LUT 'ppu_test/dma/addr_2_reg[7]_i_1' is driving clock pin of 16 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/dma/data_2_reg[7] {LDCE}
+	ppu_test/dma/data_2_reg[6] {LDCE}
+	ppu_test/dma/data_2_reg[5] {LDCE}
+	ppu_test/dma/data_2_reg[4] {LDCE}
+	ppu_test/dma/data_2_reg[3] {LDCE}
+WARNING: [Place 30-568] A LUT 'ppu_test/dma/addr_1_reg[10]_i_2' is driving clock pin of 11 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/dma/addr_1_reg[9] {LDCE}
+	ppu_test/dma/addr_1_reg[8] {LDCE}
+	ppu_test/dma/addr_1_reg[7] {LDCE}
+	ppu_test/dma/addr_1_reg[6] {LDCE}
+	ppu_test/dma/addr_1_reg[4] {LDCE}
+WARNING: [Place 30-568] A LUT 'ppu_test/pmf/wait_cpu/nt_index[1]_i_1' is driving clock pin of 2 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/nt_index_reg[1] {FDRE}
+	ppu_test/nt_index_reg[0] {FDRE}
+WARNING: [Place 30-568] A LUT 'ppu_test/psf/OAM_addr_reg[7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/psf/OAM_addr_reg[7] {LDCE}
+	ppu_test/psf/OAM_addr_reg[6] {LDCE}
+	ppu_test/psf/OAM_addr_reg[5] {LDCE}
+	ppu_test/psf/OAM_addr_reg[4] {LDCE}
+	ppu_test/psf/OAM_addr_reg[3] {LDCE}
+WARNING: [Place 30-568] A LUT 'vs/chv/cv/v_s/final_nmi_i_1' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	final_nmi_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'flag_reg_i_3' is driving clock pin of 2 registers. This could lead to large hold time violations. First few involved registers are:
+	mask_nmi_reg[0] {FDCE}
+	mask_nmi_reg[1] {FDPE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.1.2 IO & Clk Clean Up
+Phase 2.1.1.2 IO & Clk Clean Up | Checksum: ca4a7525
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 2.1.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: ca4a7525
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 2.1.1.4 Commit IO Placement
+Phase 2.1.1.4 Commit IO Placement | Checksum: bd439b9a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 183498a58
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 2.1.2 Build Placer Netlist Model
+
+Phase 2.1.2.1 Place Init Design
+
+Phase 2.1.2.1.1 Init Lut Pin Assignment
+Phase 2.1.2.1.1 Init Lut Pin Assignment | Checksum: 2348f01c8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 2.1.2.1 Place Init Design | Checksum: 2574d5f93
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 2.1.2 Build Placer Netlist Model | Checksum: 2574d5f93
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 2.1.3 Constrain Clocks/Macros
+
+Phase 2.1.3.1 Constrain Global/Regional Clocks
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 2574d5f93
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: 2574d5f93
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 2.1 Placer Initialization Core | Checksum: 2574d5f93
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 2 Placer Initialization | Checksum: 2574d5f93
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 15ef2e4f2
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 15ef2e4f2
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 1a8cbda34
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 1d5f6cae1
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 4.4 updateClock Trees: DP
+Phase 4.4 updateClock Trees: DP | Checksum: 1d5f6cae1
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 4.5 Timing Path Optimizer
+Phase 4.5 Timing Path Optimizer | Checksum: 222815d5d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 4.6 Small Shape Detail Placement
+
+Phase 4.6.1 Commit Small Macros & Core Logic
+
+Phase 4.6.1.1 setBudgets
+Phase 4.6.1.1 setBudgets | Checksum: 158a93b5f
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 4.6.1.2 Commit Slice Clusters
+Phase 4.6.1.2 Commit Slice Clusters | Checksum: 1ec0d597f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 4.6.1 Commit Small Macros & Core Logic | Checksum: 1ec0d597f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1ec0d597f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1ec0d597f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 4.6 Small Shape Detail Placement | Checksum: 1ec0d597f
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 4.7 Re-assign LUT pins
+Phase 4.7 Re-assign LUT pins | Checksum: 1ec0d597f
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 4 Detail Placement | Checksum: 1ec0d597f
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 1835a8dfe
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 5.2 Post Commit Optimization
+
+Phase 5.2.1 updateClock Trees: PCOPT
+Phase 5.2.1 updateClock Trees: PCOPT | Checksum: 1835a8dfe
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 5.2.2 Post Placement Optimization
+
+Phase 5.2.2.1 Post Placement Timing Optimization
+
+Phase 5.2.2.1.1 Restore Best Placement
+Phase 5.2.2.1.1 Restore Best Placement | Checksum: 1020ec347
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1018.844 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-3.432. For the most accurate timing information please run report_timing.
+Phase 5.2.2.1 Post Placement Timing Optimization | Checksum: 1020ec347
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 5.2.2 Post Placement Optimization | Checksum: 1020ec347
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 5.2 Post Commit Optimization | Checksum: 1020ec347
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 1020ec347
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 1020ec347
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 5.5 Placer Reporting
+
+Phase 5.5.1 Restore STA
+Phase 5.5.1 Restore STA | Checksum: 1020ec347
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 5.5 Placer Reporting | Checksum: 1020ec347
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1018.844 ; gain = 0.000
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 12ed85a70
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 12ed85a70
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Ending Placer Task | Checksum: a429bf0a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:32 . Memory (MB): peak = 1018.844 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+57 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1018.844 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1018.844 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.186 . Memory (MB): peak = 1018.844 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1018.844 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 165105075
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:41 . Memory (MB): peak = 1128.988 ; gain = 110.145
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 165105075
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:41 . Memory (MB): peak = 1129.793 ; gain = 110.949
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 165105075
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:41 . Memory (MB): peak = 1139.145 ; gain = 120.301
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 11cd4df72
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:43 . Memory (MB): peak = 1157.934 ; gain = 139.090
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.06  | TNS=-34    | WHS=-0.081 | THS=-2.03  |
+
+Phase 2 Router Initialization | Checksum: faa8a52c
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:44 . Memory (MB): peak = 1157.934 ; gain = 139.090
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 12c695e91
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:45 . Memory (MB): peak = 1157.934 ; gain = 139.090
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1102
+ Number of Nodes with overlaps = 184
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 130a2854c
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:09 . Memory (MB): peak = 1170.172 ; gain = 151.328
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-4.25  | TNS=-221   | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 1c83b2847
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:09 . Memory (MB): peak = 1170.172 ; gain = 151.328
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 1923b2f47
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:10 . Memory (MB): peak = 1170.172 ; gain = 151.328
+Phase 4.1.2 GlobIterForTiming | Checksum: 1a6214e7c
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:10 . Memory (MB): peak = 1170.172 ; gain = 151.328
+Phase 4.1 Global Iteration 0 | Checksum: 1a6214e7c
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:10 . Memory (MB): peak = 1170.172 ; gain = 151.328
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 157
+ Number of Nodes with overlaps = 67
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 1dbc00289
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:15 . Memory (MB): peak = 1170.172 ; gain = 151.328
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.95  | TNS=-222   | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.2.2 GlobIterForTiming
+
+Phase 4.2.2.1 Update Timing
+Phase 4.2.2.1 Update Timing | Checksum: 15e950a7d
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:15 . Memory (MB): peak = 1170.172 ; gain = 151.328
+
+Phase 4.2.2.2 Fast Budgeting
+Phase 4.2.2.2 Fast Budgeting | Checksum: 1637aa6cc
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:15 . Memory (MB): peak = 1170.172 ; gain = 151.328
+Phase 4.2.2 GlobIterForTiming | Checksum: 23facea8c
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:15 . Memory (MB): peak = 1170.172 ; gain = 151.328
+Phase 4.2 Global Iteration 1 | Checksum: 23facea8c
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:15 . Memory (MB): peak = 1170.172 ; gain = 151.328
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 60
+ Number of Nodes with overlaps = 85
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.3.1 Update Timing
+Phase 4.3.1 Update Timing | Checksum: 211745c0d
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:17 . Memory (MB): peak = 1170.172 ; gain = 151.328
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-4.13  | TNS=-223   | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 13b2f1830
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:18 . Memory (MB): peak = 1170.172 ; gain = 151.328
+Phase 4 Rip-up And Reroute | Checksum: 13b2f1830
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:18 . Memory (MB): peak = 1170.172 ; gain = 151.328
+
+Phase 5 Delay CleanUp
+
+Phase 5.1 Update Timing
+Phase 5.1 Update Timing | Checksum: 14fce28e5
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:18 . Memory (MB): peak = 1170.172 ; gain = 151.328
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.87  | TNS=-219   | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5 Delay CleanUp | Checksum: 24bd158fa
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:18 . Memory (MB): peak = 1170.172 ; gain = 151.328
+
+Phase 6 Clock Skew Optimization
+Phase 6 Clock Skew Optimization | Checksum: 24bd158fa
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:18 . Memory (MB): peak = 1170.172 ; gain = 151.328
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 1bbdbe189
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:18 . Memory (MB): peak = 1170.172 ; gain = 151.328
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.83  | TNS=-219   | WHS=0.11   | THS=0      |
+
+Phase 7 Post Hold Fix | Checksum: 1bbdbe189
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:18 . Memory (MB): peak = 1170.172 ; gain = 151.328
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.70388 %
+  Global Horizontal Routing Utilization  = 2.10578 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 78.3784%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 64.8649%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 83.8235%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 86.7647%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X41Y115 -> INT_R_X41Y115
+Phase 8 Route finalize | Checksum: 1cd273a8c
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:18 . Memory (MB): peak = 1170.172 ; gain = 151.328
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1cd273a8c
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:18 . Memory (MB): peak = 1170.172 ; gain = 151.328
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1dcd6a611
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:19 . Memory (MB): peak = 1170.172 ; gain = 151.328
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.83  | TNS=-219   | WHS=0.11   | THS=0      |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 11 Post Router Timing | Checksum: 1dcd6a611
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:19 . Memory (MB): peak = 1170.172 ; gain = 151.328
+INFO: [Route 35-16] Router Completed Successfully
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:01:19 . Memory (MB): peak = 1170.172 ; gain = 151.328
+INFO: [Common 17-83] Releasing license: Implementation
+71 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:20 . Memory (MB): peak = 1170.172 ; gain = 151.328
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1170.172 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [Drc 23-27] Running DRC with 2 threads
+WARNING: [Drc 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net cpu_test/m_fsm/O38 is a gated clock net sourced by a combinational pin cpu_test/m_fsm/fetch_BUFG_inst_i_1/O, cell cpu_test/m_fsm/fetch_BUFG_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net cpu_test/m_fsm/finsh_nmi_status6_out is a gated clock net sourced by a combinational pin cpu_test/m_fsm/nmi_status_i_1/O, cell cpu_test/m_fsm/nmi_status_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net cpu_test/m_fsm/n_0_dout_reg[7]_i_2 is a gated clock net sourced by a combinational pin cpu_test/m_fsm/dout_reg[7]_i_2/O, cell cpu_test/m_fsm/dout_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net nmi is a gated clock net sourced by a combinational pin flag_reg_i_3/O, cell flag_reg_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net ppu_test/dma/E is a gated clock net sourced by a combinational pin ppu_test/dma/addr_1_reg[10]_i_2/O, cell ppu_test/dma/addr_1_reg[10]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net ppu_test/dma/O1 is a gated clock net sourced by a combinational pin ppu_test/dma/addr_2_reg[7]_i_1/O, cell ppu_test/dma/addr_2_reg[7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net ppu_test/pmf/wait_cpu/CLK is a gated clock net sourced by a combinational pin ppu_test/pmf/wait_cpu/nt_index[1]_i_1/O, cell ppu_test/pmf/wait_cpu/nt_index[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net ppu_test/psf/n_0_OAM_addr_reg[7]_i_2 is a gated clock net sourced by a combinational pin ppu_test/psf/OAM_addr_reg[7]_i_2/O, cell ppu_test/psf/OAM_addr_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net vs/chv/ch/h_s/Hsync0 is a gated clock net sourced by a combinational pin vs/chv/ch/h_s/flag_i_2/O, cell vs/chv/ch/h_s/flag_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PDRC-153) Gated clock check - Net vs/chv/cv/v_s/O25 is a gated clock net sourced by a combinational pin vs/chv/cv/v_s/final_nmi_i_1/O, cell vs/chv/cv/v_s/final_nmi_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT cpu_test/m_fsm/dout_reg[7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    cpu_test/m_fsm/dout_reg[0] {LDCE}
+    cpu_test/m_fsm/dout_reg[1] {LDCE}
+    cpu_test/m_fsm/dout_reg[2] {LDCE}
+    cpu_test/m_fsm/dout_reg[3] {LDCE}
+    cpu_test/m_fsm/dout_reg[4] {LDCE}
+
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT cpu_test/m_fsm/fetch_BUFG_inst_i_1 is driving clock pin of 16 cells. This could lead to large hold time violations. First few involved cells are:
+    count_reg[0] {FDRE}
+    count_reg[10] {FDRE}
+    count_reg[11] {FDRE}
+    count_reg[12] {FDRE}
+    count_reg[13] {FDRE}
+
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT cpu_test/m_fsm/nmi_status_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    cpu_test/m_fsm/nmi_status_reg {FDPE}
+
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT flag_reg_i_3 is driving clock pin of 2 cells. This could lead to large hold time violations. First few involved cells are:
+    mask_nmi_reg[0] {FDCE}
+    mask_nmi_reg[1] {FDPE}
+
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT ppu_test/dma/addr_1_reg[10]_i_2 is driving clock pin of 11 cells. This could lead to large hold time violations. First few involved cells are:
+    ppu_test/dma/addr_1_reg[9] {LDCE}
+    ppu_test/dma/addr_1_reg[8] {LDCE}
+    ppu_test/dma/addr_1_reg[7] {LDCE}
+    ppu_test/dma/addr_1_reg[6] {LDCE}
+    ppu_test/dma/addr_1_reg[4] {LDCE}
+
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT ppu_test/dma/addr_2_reg[7]_i_1 is driving clock pin of 16 cells. This could lead to large hold time violations. First few involved cells are:
+    ppu_test/dma/data_2_reg[7] {LDCE}
+    ppu_test/dma/data_2_reg[6] {LDCE}
+    ppu_test/dma/data_2_reg[5] {LDCE}
+    ppu_test/dma/data_2_reg[4] {LDCE}
+    ppu_test/dma/data_2_reg[3] {LDCE}
+
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT ppu_test/pmf/wait_cpu/nt_index[1]_i_1 is driving clock pin of 2 cells. This could lead to large hold time violations. First few involved cells are:
+    ppu_test/nt_index_reg[1] {FDRE}
+    ppu_test/nt_index_reg[0] {FDRE}
+
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT ppu_test/psf/OAM_addr_reg[7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    ppu_test/psf/OAM_addr_reg[7] {LDCE}
+    ppu_test/psf/OAM_addr_reg[6] {LDCE}
+    ppu_test/psf/OAM_addr_reg[5] {LDCE}
+    ppu_test/psf/OAM_addr_reg[4] {LDCE}
+    ppu_test/psf/OAM_addr_reg[3] {LDCE}
+
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT vs/chv/ch/h_s/flag_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    ppu_test/flag_reg {FDCE}
+
+WARNING: [Drc 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT vs/chv/cv/v_s/final_nmi_i_1 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    final_nmi_reg {FDRE}
+
+INFO: [Drc 23-20] Rule violation (REQP-165) writefirst - Synchronous clocking for BRAM (ppu_test/oam/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with Write First mode may have address collisions if the same address appears on both read and write ports. It is suggested to simulate the design to determine if any possible address collisions could exist in the design.  If so it is suggested to evaluate ways to eliminate the collisions or you may change the write mode to Read First which may reduce some performance and consume more power however will delay the writing thus resolving any potential collisions.  See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 21 Warnings, 1 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./CPU_PPU_CHIP_TEST.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory for users of free Webpack licenses. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1511.715 ; gain = 338.574
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 24 01:00:10 2015...

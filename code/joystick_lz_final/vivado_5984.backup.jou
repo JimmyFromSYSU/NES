@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Feb 04 20:18:14 2015
+# Process ID: 6492
+# Log file: E:/zyh/joystick_lz/vivado.log
+# Journal file: E:/zyh/joystick_lz\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/zyh/joystick_lz/joystick_lz.xpr
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592702A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592702A]
+open_hw_target
+set_property PROGRAM.FILE {E:/zyh/joystick_lz/joystick_lz.runs/impl_1/joystick.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {E:/zyh/joystick_lz/joystick_lz.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {E:/zyh/joystick_lz/joystick_lz.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {E:/zyh/joystick_lz/joystick_lz.runs/impl_1/joystick.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+launch_simulation
+source test_bentch_control.tcl
+close_sim

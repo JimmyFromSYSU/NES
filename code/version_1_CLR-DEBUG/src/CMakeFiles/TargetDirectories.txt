@@ -1,0 +1,10 @@
+/Users/admin/Desktop/FPGA/Tool/src/cpu/CMakeFiles/cpu.dir
+/Users/admin/Desktop/FPGA/Tool/src/CMakeFiles/cpu_test.dir
+/Users/admin/Desktop/FPGA/Tool/src/CMakeFiles/game_test.dir
+/Users/admin/Desktop/FPGA/Tool/src/CMakeFiles/ins_test.dir
+/Users/admin/Desktop/FPGA/Tool/src/CMakeFiles/mem_test.dir
+/Users/admin/Desktop/FPGA/Tool/src/CMakeFiles/mif2bin.dir
+/Users/admin/Desktop/FPGA/Tool/src/CMakeFiles/nes2bin.dir
+/Users/admin/Desktop/FPGA/Tool/src/CMakeFiles/ppu_rom_test.dir
+/Users/admin/Desktop/FPGA/Tool/src/CMakeFiles/tank.dir
+/Users/admin/Desktop/FPGA/Tool/src/tool/CMakeFiles/tool.dir

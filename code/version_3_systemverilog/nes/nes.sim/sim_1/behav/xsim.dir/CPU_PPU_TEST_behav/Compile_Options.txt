@@ -1,0 +1,1 @@
+-wto "908fd2dd996940a298acfca8faf25c9d" --debug "typical" --relax -L "blk_mem_gen_v8_2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "CPU_PPU_TEST_behav" "xil_defaultlib.CPU_PPU_TEST" "xil_defaultlib.glbl" -log "elaborate.log" 

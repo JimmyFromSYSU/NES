@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Apr 22 21:11:33 2015
+# Process ID: 8552
+# Log file: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav/xsim.dir/CPU_PPU_TEST_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 62.152 ; gain = 0.012
+
+    while executing
+"webtalk_transmit -clientid 3732601981 -regid "211022420_0_0_135" -xml C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav/xsim.dir/CPU_PPU_TEST..."
+    (file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav/xsim.dir/CPU_PPU_TEST_behav/webtalk/xsim_webtalk.tcl" line 42)
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 22 21:11:40 2015...

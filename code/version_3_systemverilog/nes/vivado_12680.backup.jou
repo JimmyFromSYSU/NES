@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Apr 22 20:56:19 2015
+# Process ID: 10940
+# Log file: C:/Users/nfxz/Desktop/Project/FPGA/nes/vivado.log
+# Journal file: C:/Users/nfxz/Desktop/Project/FPGA/nes\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property -dict [list CONFIG.Coe_File {C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom_mid.coe}] [get_ips PROM]
+generate_target all [get_files  C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PROM/PROM.xci]
+reset_run PROM_synth_1
+launch_run  PROM_synth_1
+launch_simulation
+open_wave_config C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg
+open_wave_config C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg
+source CPU_PPU_TEST.tcl
+set_property -dict [list CONFIG.Coe_File {C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe}] [get_ips PRAM]
+close_sim
+launch_simulation
+open_wave_config C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg
+open_wave_config C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg
+source CPU_PPU_TEST.tcl
+set_property -dict [list CONFIG.Coe_File {C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom_mid.coe}] [get_ips PROM]
+generate_target all [get_files  C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PROM/PROM.xci]
+reset_run PROM_synth_1
+launch_run  PROM_synth_1
+set_property -dict [list CONFIG.Coe_File {C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe}] [get_ips PRAM]
+set_property -dict [list CONFIG.Coe_File {C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe}] [get_ips PRAM]
+reset_run PROM_synth_1
+set_property -dict [list CONFIG.Coe_File {C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe}] [get_ips PRAM]
+close_sim

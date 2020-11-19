@@ -1,0 +1,1011 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Apr 22 20:56:19 2015
+# Process ID: 10940
+# Log file: C:/Users/nfxz/Desktop/Project/FPGA/nes/vivado.log
+# Journal file: C:/Users/nfxz/Desktop/Project/FPGA/nes\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_TEST_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 775.781 ; gain = 220.199
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property -dict [list CONFIG.Coe_File {C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom_mid.coe}] [get_ips PROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom_mid.coe' provided. It will be converted relative to IP Instance files '..\..\..\..\..\Doc\tank_rom\tank_prom_mid.coe'
+generate_target all [get_files  C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PROM/PROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'PROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PROM'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'PROM' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'PROM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'PROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'PROM'...
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 800.938 ; gain = 0.000
+reset_run PROM_synth_1
+launch_run  PROM_synth_1
+[Wed Apr 22 20:59:05 2015] Launched PROM_synth_1...
+Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PROM_synth_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CPU_PPU_TEST' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PROM/PROM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom_mid.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/PRAM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/VROM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/img/VROM.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/OAM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_OAM.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/Palette.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/img/Palette.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/COLOR_TABLE.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/color_table.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/VRAM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/img/VRAM.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_vrom.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_vram.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_Palette.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/Doc/tank_rom/tank_prom.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/Doc/tank_rom/tank_vrom.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/Doc/tank_rom/tank_OAM.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/Doc/tank_rom/tank_vram.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/Doc/tank_rom/tank_Palette.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/Doc/tank_rom/color_table.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/Doc/img/OAM.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom_test.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/CPU_PPU_TEST.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/PPU_TEST.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/PPU_REG.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/NMI_TEST.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/CPU_TEST.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/imports/new/test_bentch_control.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/imports/new/TEST_VGA.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/PULSE_TEST.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/imports/new/test_cnt.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-103] Finding block fileset files...
+INFO: [USF-XSim-67] Inspecting fileset 'PROM' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'PROM'
+INFO: [USF-XSim-67] Inspecting fileset 'PRAM' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'PRAM'
+INFO: [USF-XSim-67] Inspecting fileset 'VROM' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'VROM'
+INFO: [USF-XSim-67] Inspecting fileset 'OAM' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'OAM'
+INFO: [USF-XSim-67] Inspecting fileset 'Palette' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'Palette'
+INFO: [USF-XSim-67] Inspecting fileset 'COLOR_TABLE' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'COLOR_TABLE'
+INFO: [USF-XSim-67] Inspecting fileset 'VRAM' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'VRAM'
+INFO: [USF-XSim-103] Finding block fileset files...
+INFO: [USF-XSim-67] Inspecting fileset 'PROM' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-67] Inspecting fileset 'PRAM' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-67] Inspecting fileset 'VROM' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-67] Inspecting fileset 'OAM' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-67] Inspecting fileset 'Palette' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-67] Inspecting fileset 'COLOR_TABLE' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-67] Inspecting fileset 'VRAM' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav'
+"xvlog -m64 -prj CPU_PPU_TEST_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PROM/sim/PROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:73]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:95]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:109]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:129]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:148]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:166]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:635]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:994]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1270]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1493]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1563]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1859]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1951]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3401]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/sim/PRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:73]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:95]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:109]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:129]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:148]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:166]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:635]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:994]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1270]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1493]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1563]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1859]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1951]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3401]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/sim/VROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:73]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:95]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:109]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:129]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:148]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:166]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:635]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:994]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1270]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1493]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1563]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1859]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1951]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3401]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/sim/OAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:73]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:95]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:109]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:129]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:148]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:166]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:635]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:994]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1270]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1493]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1563]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1859]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1951]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3401]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/sim/Palette.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Palette
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:73]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:95]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:109]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:129]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:148]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:166]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:635]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:994]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1270]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1493]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1563]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1859]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1951]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3401]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/sim/COLOR_TABLE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module COLOR_TABLE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:73]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:95]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:109]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:129]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:148]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:166]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:635]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:994]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1270]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1493]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1563]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1859]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1951]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3401]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/sim/VRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VRAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/imports/new/joy_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module auto_add
+INFO: [VRFC 10-311] analyzing module time_counter
+INFO: [VRFC 10-311] analyzing module divide_16
+INFO: [VRFC 10-311] analyzing module divide_cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_SP_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPU_SPRITE_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_PALETTE_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectLowBit
+INFO: [VRFC 10-311] analyzing module PPU_LOW_BITS
+WARNING: [VRFC 10-756] identifier wait_palette_q is used before its declaration [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_PALETTE_FSM.sv:58]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_MAIN_LOOP.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPU_MAIN_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_BG_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPU_BG_FSM
+WARNING: [VRFC 10-756] identifier wait_name_q is used before its declaration [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_BG_FSM.sv:60]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/DMA.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/main_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INS_DECODER
+INFO: [VRFC 10-311] analyzing module NMI_PULSE
+INFO: [VRFC 10-311] analyzing module MAIN_LOOP_FSM
+INFO: [VRFC 10-311] analyzing module ADDR_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/imports/new/createHV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module createHV
+INFO: [VRFC 10-311] analyzing module set_reset
+INFO: [VRFC 10-311] analyzing module createH
+INFO: [VRFC 10-311] analyzing module createV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/imports/new/vga.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_chip_test
+INFO: [VRFC 10-311] analyzing module vga_sig
+INFO: [VRFC 10-311] analyzing module vga
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/CPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_chip_test
+INFO: [VRFC 10-311] analyzing module CPU6502
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/imports/new/CPU_PPU_CHIP_TEST.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectData
+INFO: [VRFC 10-311] analyzing module saveData
+INFO: [VRFC 10-311] analyzing module MY_SCAN_LINE_BUF
+INFO: [VRFC 10-311] analyzing module CPU_PPU_CHIP_TEST
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/CPU_PPU_TEST.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_PPU_TEST
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 800.938 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 908fd2dd996940a298acfca8faf25c9d --debug typical --relax -L blk_mem_gen_v8_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_PPU_TEST_behav xil_defaultlib.CPU_PPU_TEST xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 8 for port addra [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU.sv:204]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port dinb [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU.sv:322]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port web [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU.sv:323]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_MAIN_LOOP.sv:35]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_BG_FSM.sv" Line 2. Module PPU_BG_FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_SP_FSM.sv" Line 3. Module PPU_SPRITE_FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_MAIN_LOOP.sv" Line 2. Module PPU_MAIN_FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_BG_FSM.sv" Line 2. Module PPU_BG_FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_SP_FSM.sv" Line 3. Module PPU_SPRITE_FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_MAIN_LOOP.sv" Line 2. Module PPU_MAIN_FSM doesn't have a timescale but at least one module in design has a timescale.
+INFO: [XSIM 43-4009] "valid", written at line 69 in file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/imports/new/vga.sv", has also been read in this always_comb/always_latch block and is not added to the sensitivity list.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divide_16
+Compiling module xil_defaultlib.auto_add(W=9)
+Compiling module xil_defaultlib.DMA
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_axi_regs_fwd_v8_2(C_DATA...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.OAM
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.Palette
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.VRAM
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.PPU_BG_FSM
+Compiling module xil_defaultlib.PPU_SPRITE_FSM
+Compiling module xil_defaultlib.counter(W=32)
+Compiling module xil_defaultlib.PPU_MAIN_FSM
+Compiling module xil_defaultlib.selectLowBit
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.VROM
+Compiling module xil_defaultlib.auto_add
+Compiling module xil_defaultlib.PPU_LOW_BITS
+Compiling module xil_defaultlib.PPU
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.COLOR_TABLE
+Compiling module xil_defaultlib.selectData
+Compiling module xil_defaultlib.saveData
+Compiling module xil_defaultlib.MY_SCAN_LINE_BUF
+Compiling module xil_defaultlib.set_reset
+Compiling module xil_defaultlib.createH
+Compiling module xil_defaultlib.createV
+Compiling module xil_defaultlib.createHV
+Compiling module xil_defaultlib.vga_sig
+Compiling module xil_defaultlib.INS_DECODER
+Compiling module xil_defaultlib.NMI_PULSE
+Compiling module xil_defaultlib.MAIN_LOOP_FSM
+Compiling module xil_defaultlib.ADDR_FSM
+Compiling module xil_defaultlib.CPU6502
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.PRAM
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.PROM
+Compiling module xil_defaultlib.CPU_PPU_TEST
+Compiling module xil_defaultlib.glbl
+Compiling package xil_defaultlib.$unit_1
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot CPU_PPU_TEST_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav/xsim.dir/CPU_PPU_TEST_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav/xsim.dir/CPU_PPU_TEST_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Apr 22 20:59:44 2015. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 62.195 ; gain = 0.016
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 22 20:59:44 2015...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 800.938 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_TEST_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_TEST_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_PPU_TEST_behav -key {Behavioral:sim_1:Functional:CPU_PPU_TEST} -tclbatch {CPU_PPU_TEST.tcl} -view {C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg} -view {C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg
+open_wave_config C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg
+ERROR: [Wavedata 42-52] WCFG file 'C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg' is already open.
+source CPU_PPU_TEST.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 30000000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.ppu_test.oam.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.ppu_test.p.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.ppu_test.vram.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.ppu_test.plb.vrom.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.color_t.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.pram.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.prom.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:00:24 ; elapsed = 00:01:28 . Memory (MB): peak = 810.430 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:27 ; elapsed = 00:01:30 . Memory (MB): peak = 810.430 ; gain = 9.492
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_PPU_TEST_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 30000000ns
+launch_simulation: Time (s): cpu = 00:00:31 ; elapsed = 00:02:06 . Memory (MB): peak = 810.430 ; gain = 9.492
+set_property -dict [list CONFIG.Coe_File {C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe}] [get_ips PRAM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe' provided. It will be converted relative to IP Instance files '..\..\..\..\..\Doc\tank_rom\tank_pram.coe'
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 847.246 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CPU_PPU_TEST' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PROM/PROM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom_mid.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/PRAM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/VROM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/img/VROM.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/OAM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_OAM.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/Palette.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/img/Palette.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/COLOR_TABLE.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/color_table.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/VRAM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/img/VRAM.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_vrom.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_vram.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_Palette.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/Doc/tank_rom/tank_prom.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/Doc/tank_rom/tank_vrom.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/Doc/tank_rom/tank_OAM.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/Doc/tank_rom/tank_vram.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/Doc/tank_rom/tank_Palette.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/Doc/tank_rom/color_table.coe'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/Doc/img/OAM.coe'
+WARNING: [USF-XSim-65] Failed to copy file 'C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom_test.coe' to 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav' : error copying "C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom_test.coe": no such file or directory
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/CPU_PPU_TEST.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/PPU_TEST.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/PPU_REG.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/NMI_TEST.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/CPU_TEST.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/imports/new/test_bentch_control.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/imports/new/TEST_VGA.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/PULSE_TEST.sv'
+INFO: [USF-XSim-66] Exported 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/imports/new/test_cnt.sv'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-103] Finding block fileset files...
+INFO: [USF-XSim-67] Inspecting fileset 'PROM' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'PROM'
+INFO: [USF-XSim-67] Inspecting fileset 'PRAM' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'PRAM'
+INFO: [USF-XSim-67] Inspecting fileset 'VROM' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'VROM'
+INFO: [USF-XSim-67] Inspecting fileset 'OAM' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'OAM'
+INFO: [USF-XSim-67] Inspecting fileset 'Palette' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'Palette'
+INFO: [USF-XSim-67] Inspecting fileset 'COLOR_TABLE' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'COLOR_TABLE'
+INFO: [USF-XSim-67] Inspecting fileset 'VRAM' for 'FILE_TYPE == "VHDL" || FILE_TYPE == "VHDL 2008"' files...
+INFO: [USF-XSim-68] No files found in 'VRAM'
+INFO: [USF-XSim-103] Finding block fileset files...
+INFO: [USF-XSim-67] Inspecting fileset 'PROM' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-67] Inspecting fileset 'PRAM' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-67] Inspecting fileset 'VROM' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-67] Inspecting fileset 'OAM' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-67] Inspecting fileset 'Palette' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-67] Inspecting fileset 'COLOR_TABLE' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-67] Inspecting fileset 'VRAM' for 'FILE_TYPE == "Verilog"' files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav'
+"xvlog -m64 -prj CPU_PPU_TEST_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PROM/sim/PROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:73]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:95]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:109]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:129]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:148]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:166]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:635]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:994]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1270]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1493]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1563]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1859]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1951]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3401]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PRAM/sim/PRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:73]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:95]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:109]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:129]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:148]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:166]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:635]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:994]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1270]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1493]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1563]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1859]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1951]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3401]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VROM/sim/VROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:73]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:95]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:109]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:129]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:148]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:166]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:635]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:994]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1270]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1493]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1563]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1859]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1951]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3401]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/OAM/sim/OAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:73]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:95]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:109]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:129]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:148]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:166]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:635]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:994]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1270]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1493]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1563]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1859]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1951]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3401]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/sim/Palette.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Palette
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:73]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:95]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:109]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:129]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:148]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:166]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:635]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:994]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1270]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1493]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1563]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1859]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1951]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3401]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/COLOR_TABLE/sim/COLOR_TABLE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module COLOR_TABLE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module STATE_LOGIC_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:73]
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_muxf7_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:95]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:109]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_pre_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:129]
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module beh_vlog_ff_ce_clr_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:148]
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module write_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:166]
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module read_netlist_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:635]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_write_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:994]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_read_wrapper_beh_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1270]
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_axi_regs_fwd_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1493]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_output_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1563]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_softecc_output_reg_stage [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1859]
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+WARNING: [VRFC 10-1195] overwriting previous definition of module BLK_MEM_GEN_v8_2_mem_module [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:1951]
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+WARNING: [VRFC 10-1195] overwriting previous definition of module blk_mem_gen_v8_2 [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v:3401]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/VRAM/sim/VRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VRAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/imports/new/joy_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module auto_add
+INFO: [VRFC 10-311] analyzing module time_counter
+INFO: [VRFC 10-311] analyzing module divide_16
+INFO: [VRFC 10-311] analyzing module divide_cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_SP_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPU_SPRITE_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_PALETTE_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectLowBit
+INFO: [VRFC 10-311] analyzing module PPU_LOW_BITS
+WARNING: [VRFC 10-756] identifier wait_palette_q is used before its declaration [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_PALETTE_FSM.sv:58]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_MAIN_LOOP.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPU_MAIN_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_BG_FSM.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPU_BG_FSM
+WARNING: [VRFC 10-756] identifier wait_name_q is used before its declaration [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_BG_FSM.sv:60]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/DMA.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/main_loop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INS_DECODER
+INFO: [VRFC 10-311] analyzing module NMI_PULSE
+INFO: [VRFC 10-311] analyzing module MAIN_LOOP_FSM
+INFO: [VRFC 10-311] analyzing module ADDR_FSM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/imports/new/createHV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module createHV
+INFO: [VRFC 10-311] analyzing module set_reset
+INFO: [VRFC 10-311] analyzing module createH
+INFO: [VRFC 10-311] analyzing module createV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/imports/new/vga.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_chip_test
+INFO: [VRFC 10-311] analyzing module vga_sig
+INFO: [VRFC 10-311] analyzing module vga
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/CPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_chip_test
+INFO: [VRFC 10-311] analyzing module CPU6502
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/imports/new/CPU_PPU_CHIP_TEST.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selectData
+INFO: [VRFC 10-311] analyzing module saveData
+INFO: [VRFC 10-311] analyzing module MY_SCAN_LINE_BUF
+INFO: [VRFC 10-311] analyzing module CPU_PPU_CHIP_TEST
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sim_1/new/CPU_PPU_TEST.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_PPU_TEST
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 847.246 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 908fd2dd996940a298acfca8faf25c9d --debug typical --relax -L blk_mem_gen_v8_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_PPU_TEST_behav xil_defaultlib.CPU_PPU_TEST xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 8 for port addra [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU.sv:204]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port dinb [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU.sv:322]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port web [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU.sv:323]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_MAIN_LOOP.sv:35]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_BG_FSM.sv" Line 2. Module PPU_BG_FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_SP_FSM.sv" Line 3. Module PPU_SPRITE_FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_MAIN_LOOP.sv" Line 2. Module PPU_MAIN_FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_BG_FSM.sv" Line 2. Module PPU_BG_FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_SP_FSM.sv" Line 3. Module PPU_SPRITE_FSM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/new/PPU_MAIN_LOOP.sv" Line 2. Module PPU_MAIN_FSM doesn't have a timescale but at least one module in design has a timescale.
+INFO: [XSIM 43-4009] "valid", written at line 69 in file "C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/imports/new/vga.sv", has also been read in this always_comb/always_latch block and is not added to the sensitivity list.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divide_16
+Compiling module xil_defaultlib.auto_add(W=9)
+Compiling module xil_defaultlib.DMA
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_axi_regs_fwd_v8_2(C_DATA...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.OAM
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.Palette
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.VRAM
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.PPU_BG_FSM
+Compiling module xil_defaultlib.PPU_SPRITE_FSM
+Compiling module xil_defaultlib.counter(W=32)
+Compiling module xil_defaultlib.PPU_MAIN_FSM
+Compiling module xil_defaultlib.selectLowBit
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.VROM
+Compiling module xil_defaultlib.auto_add
+Compiling module xil_defaultlib.PPU_LOW_BITS
+Compiling module xil_defaultlib.PPU
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.COLOR_TABLE
+Compiling module xil_defaultlib.selectData
+Compiling module xil_defaultlib.saveData
+Compiling module xil_defaultlib.MY_SCAN_LINE_BUF
+Compiling module xil_defaultlib.set_reset
+Compiling module xil_defaultlib.createH
+Compiling module xil_defaultlib.createV
+Compiling module xil_defaultlib.createHV
+Compiling module xil_defaultlib.vga_sig
+Compiling module xil_defaultlib.INS_DECODER
+Compiling module xil_defaultlib.NMI_PULSE
+Compiling module xil_defaultlib.MAIN_LOOP_FSM
+Compiling module xil_defaultlib.ADDR_FSM
+Compiling module xil_defaultlib.CPU6502
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.PRAM
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.PROM
+Compiling module xil_defaultlib.CPU_PPU_TEST
+Compiling module xil_defaultlib.glbl
+Compiling package xil_defaultlib.$unit_1
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot CPU_PPU_TEST_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav/xsim.dir/CPU_PPU_TEST_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav/xsim.dir/CPU_PPU_TEST_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Apr 22 21:04:52 2015. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 62.039 ; gain = 0.004
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr 22 21:04:52 2015...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 847.246 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_TEST_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_TEST_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_PPU_TEST_behav -key {Behavioral:sim_1:Functional:CPU_PPU_TEST} -tclbatch {CPU_PPU_TEST.tcl} -view {C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg} -view {C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+open_wave_config C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg
+open_wave_config C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg
+ERROR: [Wavedata 42-52] WCFG file 'C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_PPU_TEST_behav.wcfg' is already open.
+source CPU_PPU_TEST.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 30000000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.ppu_test.oam.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.ppu_test.p.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.ppu_test.vram.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.ppu_test.plb.vrom.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.color_t.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.pram.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.prom.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:00:21 ; elapsed = 00:01:17 . Memory (MB): peak = 847.246 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:22 ; elapsed = 00:01:19 . Memory (MB): peak = 847.246 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_PPU_TEST_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 30000000ns
+launch_simulation: Time (s): cpu = 00:00:24 ; elapsed = 00:01:47 . Memory (MB): peak = 847.246 ; gain = 0.000
+set_property -dict [list CONFIG.Coe_File {C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom_mid.coe}] [get_ips PROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_prom_mid.coe' provided. It will be converted relative to IP Instance files '..\..\..\..\..\Doc\tank_rom\tank_prom_mid.coe'
+generate_target all [get_files  C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/PROM/PROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'PROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PROM'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'PROM' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'PROM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'PROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'PROM'...
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 847.246 ; gain = 0.000
+reset_run PROM_synth_1
+launch_run  PROM_synth_1
+[Wed Apr 22 21:08:32 2015] Launched PROM_synth_1...
+Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PROM_synth_1/runme.log
+set_property -dict [list CONFIG.Coe_File {C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe}] [get_ips PRAM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe' provided. It will be converted relative to IP Instance files '..\..\..\..\..\Doc\tank_rom\tank_pram.coe'
+set_property -dict [list CONFIG.Coe_File {C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe}] [get_ips PRAM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe' provided. It will be converted relative to IP Instance files '..\..\..\..\..\Doc\tank_rom\tank_pram.coe'
+reset_run PROM_synth_1
+set_property -dict [list CONFIG.Coe_File {C:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe}] [get_ips PRAM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/nfxz/Desktop/Project/FPGA/Doc/tank_rom/tank_pram.coe' provided. It will be converted relative to IP Instance files '..\..\..\..\..\Doc\tank_rom\tank_pram.coe'
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 855.707 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 21:10:08 2015...

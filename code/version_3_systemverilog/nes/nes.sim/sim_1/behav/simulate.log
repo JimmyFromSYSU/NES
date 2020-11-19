@@ -1,0 +1,23 @@
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.ppu_test.oam.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.ppu_test.p.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.ppu_test.vram.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.ppu_test.plb.vrom.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.color_t.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.pram.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module CPU_PPU_TEST.prom.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.

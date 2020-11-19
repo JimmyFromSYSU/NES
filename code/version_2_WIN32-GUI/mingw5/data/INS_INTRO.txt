@@ -1,0 +1,346 @@
+0 	Expand 		0	arg=
+1 	Implied		0	arg=*
+2 	Acc		0	arg=A
+3 	Immediate	1	arg=D1
+4 	ZPAbsolute	1	arg=[D1]
+5 	ZPAbsoluteX	1	arg=[(D1+X)%256]
+6 	ZPAbsoluteY	1	arg=[(D1+Y)%256]
+7	AbsoluteX	2	arg=[D2~D1+X]
+8	AbsoluteY	2	arg=[D2~D1+Y]
+9	Absolute	2	arg=[D2~D1]
+10	Indirect	2	N=D2~D1,arg=[[N+1]~[N]]
+11 	IndirectX	1	N=(D1+X)%256,arg=[[N+1]~[N]]
+12	IndirectY	1	arg=[[D1+1]~[D1]+Y]
+13	Relative	1	arg=[P'+sign(D1)]
+
+-1
+
+BRK 0 1
+ORA 1 11
+STP 2 0
+SLO 3 11
+NOP 4 4
+ORA 5 4
+ASL 6 4
+SLO 7 4
+PHP 8 1
+ORA 9 3
+ASL 10 2
+ANC 11 0
+NOP 12 9
+ORA 13 9
+ASL 14 9
+SLO 15 9
+BPL 16 13
+ORA 17 12
+STP 18 0
+SLO 19 12
+NOP 20 5
+ORA 21 5
+ASL 22 5
+SLO 23 5
+CLC 24 1
+ORA 25 8
+NOP 26 1
+SLO 27 8
+NOP 28 7
+ORA 29 7
+ASL 30 7
+SLO 31 7
+JSR 32 9
+AND 33 11
+STP 34 0
+RLA 35 0
+BIT 36 4
+AND 37 4
+ROL 38 4
+RLA 39 0
+PLP 40 1
+AND 41 3
+ROL 42 2
+ANC 43 0
+BIT 44 9
+AND 45 9
+ROL 46 9
+RLA 47 0
+BMI 48 13
+AND 49 12
+STP 50 0
+RLA 51 0
+NOP 52 5
+AND 53 5
+ROL 54 5
+RLA 55 0
+SEC 56 1
+AND 57 8
+NOP 58 1
+RLA 59 8
+NOP 60 7
+AND 61 7
+ROL 62 7
+RLA 63 0
+RTI 64 1
+EOR 65 11
+STP 66 0
+SRE 67 0
+NOP 68 4
+EOR 69 4
+LSR 70 4
+SRE 71 0
+PHA 72 1
+EOR 73 3
+LSR 74 2
+ALR 75 3
+JMP 76 9
+EOR 77 9
+LSR 78 9
+SRE 79 0
+BVC 80 13
+EOR 81 12
+STP 82 0
+SRE 83 0
+NOP 84 5
+EOR 85 5
+LSR 86 5
+SRE 87 0
+CLI 88 1
+EOR 89 8
+NOP 90 1
+SRE 91 0
+NOP 92 7
+EOR 93 7
+LSR 94 7
+SRE 95 0
+RTS 96 1
+ADC 97 11
+STP 98 0
+RRA 99 0
+NOP 100 4
+ADC 101 4
+ROR 102 4
+RRA 103 0
+PLA 104 1
+ADC 105 3
+ROR 106 2
+ARR 107 0
+JMP 108 10
+ADC 109 9
+ROR 110 9
+RRA 111 0
+BVS 112 13
+ADC 113 12
+STP 114 0
+RRA 115 0
+NOP 116 5
+ADC 117 5
+ROR 118 5
+RRA 119 0
+SEI 120 1
+ADC 121 8
+NOP 122 1
+RRA 123 0
+NOP 124 7
+ADC 125 7
+ROR 126 7
+RRA 127 0
+NOP 128 3
+STA 129 11
+NOP 130 3
+SAX 131 0
+STY 132 4
+STA 133 4
+STX 134 4
+SAX 135 0
+DEY 136 1
+NOP 137 3
+TXA 138 1
+XAA 139 3
+STY 140 9
+STA 141 9
+STX 142 9
+SAX 143 0
+BCC 144 13
+STA 145 12
+STP 146 0
+AHX 147 0
+STY 148 5
+STA 149 5
+STX 150 6
+SAX 151 0
+TYA 152 1
+STA 153 8
+TXS 154 1
+TAS 155 8
+SHY 156 7
+STA 157 7
+SHX 158 0
+AHX 159 0
+LDY 160 3
+LDA 161 11
+LDX 162 3
+LAX 163 11
+LDY 164 4
+LDA 165 4
+LDX 166 4
+LAX 167 4
+TAY 168 1
+LDA 169 3
+TAX 170 1
+LAX 171 3
+LDY 172 9
+LDA 173 9
+LDX 174 9
+LAX 175 9
+BCS 176 13
+LDA 177 12
+STP 178 0
+LAX 179 12
+LDY 180 5
+LDA 181 5
+LDX 182 6
+LAX 183 6
+CLV 184 1
+LDA 185 8
+TSX 186 1
+LAS 187 8
+LDY 188 7
+LDA 189 7
+LDX 190 8
+LAX 191 8
+CPY 192 3
+CMP 193 11
+NOP 194 3
+DCP 195 11
+CPY 196 4
+CMP 197 4
+DEC 198 4
+DCP 199 4
+INY 200 1
+CMP 201 3
+DEX 202 1
+AXS 203 0
+CPY 204 9
+CMP 205 9
+DEC 206 9
+DCP 207 9
+BNE 208 13
+CMP 209 12
+STP 210 0
+DCP 211 12
+NOP 212 5
+CMP 213 5
+DEC 214 5
+DCP 215 5
+CLD 216 1
+CMP 217 8
+NOP 218 1
+DCP 219 8
+NOP 220 7
+CMP 221 7
+DEC 222 7
+DCP 223 7
+CPX 224 3
+SBC 225 11
+NOP 226 3
+ISC 227 0
+CPX 228 4
+SBC 229 4
+INC 230 4
+ISC 231 0
+INX 232 1
+SBC 233 3
+NOP 234 1
+SBC 235 0
+CPX 236 9
+SBC 237 9
+INC 238 9
+ISC 239 0
+BEQ 240 13
+SBC 241 12
+STP 242 0
+ISC 243 0
+NOP 244 5
+SBC 245 5
+INC 246 5
+ISC 247 0
+SED 248 1
+SBC 249 8
+NOP 250 1
+ISC 251 0
+NOP 252 7
+SBC 253 7
+INC 254 7
+ISC 255 0
+
+END
+
+
+
+AND "AND" Memory with Accumulator
+EOR "Exclusive-Or" Memory with Accumulator
+ORA "OR" Memory with Accumulator
+
+ASL Shift Left One Bit (Memory or Accumulator)
+LSR Shift Right One Bit (Memory or Accumulator)
+ROL Rotate One Bit Left (Memory or Accumulator)
+ROR Rotate One Bit Right (Memory or Accumulator)
+
+BIT (!) Test Bits in Memory with Accumulator??
+ADC (!) Add Memory to Accumulator with Carry
+SBC (!) Subtract Memory from Accumulator with Borrow
+
+CMP Compare Memory and Accumulator
+CPX Compare Memory and Index X
+CPY Compare Memory and Index Y
+
+RTI Return from Interrupt
+RTS Return from Subroutine
+
+PHA Push Accumulator on Stack
+PHP Push Processor Status on Stack
+PLA Pull Accumulator from Stack
+PLP Pull Processor Status from Stack
+
+BCC Branch on Carry Clear
+BCS Branch on Carry Set
+BEQ Branch on Result Zero
+BMI Branch on Result Minus
+BNE Branch on Result not Zero
+BPL Branch on Result Plus
+BRK Force Break
+BVC Branch on Overflow Clear
+BVS Branch on Overflow Set
+JMP Jump to New Location
+JSR Jump to New Location Saving Return Address
+
+CLC Clear Carry Flag
+CLD Clear Decimal Mode
+CLI Clear interrupt Disable Bit
+CLV Clear Overflow Flag
+SEC Set Carry Flag
+SED Set Decimal Mode
+SEI Set Interrupt Disable Status
+
+
+DEC Decrement Memory by One
+DEX Decrement Index X by One
+DEY Decrement Index Y by One
+INC Increment Memory by One
+INX Increment Index X by One
+INY Increment Index Y by One
+
+LDA Load Accumulator with Memory
+LDX Load Index X with Memory
+LDY Load Index Y with Memory
+STA Store Accumulator in Memory
+STX Store Index X in Memory
+STY Store Index Y in Memory
+
+TAX Transfer Accumulator to Index X
+TAY Transfer Accumulator to Index Y
+TSX Transfer Stack Pointer to Index X
+TXA Transfer Index X to Accumulator
+TXS Transfer Index X to Stack Pointer
+TYA Transfer Index Y to Accumulator
+
+NOP No Operation

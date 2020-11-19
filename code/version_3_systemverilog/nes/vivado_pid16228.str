@@ -1,0 +1,858 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+Process ID: 16228
+
+Current time: 	4/23/15 8:47:36 AM
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.4/tps/win64/jre
+
+User name: 	nfxz
+User directory: C:/Users/nfxz/Desktop/Project/FPGA/nes
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+Vivado preferences path: C:/Users/nfxz/AppData/Roaming/Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: C:/Users/nfxz/AppData/Roaming/Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	131 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 350 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// [GUI Memory]: 51 MB (+51377kb) [00:00:12]
+// [Engine Memory]: 348 MB (+213146kb) [00:00:12]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 393 MB (+47738kb) [00:00:14]
+// [Engine Memory]: 460 MB (+70148kb) [00:00:15]
+// [Engine Memory]: 475 MB (+15089kb) [00:00:16]
+// [GUI Memory]: 52 MB (+387kb) [00:00:18]
+// [GUI Memory]: 52 MB (+372kb) [00:00:18]
+// Tcl Message: open_project C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 479 MB. GUI used memory: 37 MB. Current time: 4/23/15 8:47:42 AM
+// [Engine Memory]: 483 MB (+9207kb) [00:00:19]
+// [GUI Memory]: 54 MB (+2399kb) [00:00:19]
+// [GUI Memory]: 55 MB (+447kb) [00:00:19]
+// [GUI Memory]: 56 MB (+854kb) [00:00:19]
+// [GUI Memory]: 56 MB (+449kb) [00:00:19]
+// [GUI Memory]: 57 MB (+854kb) [00:00:19]
+// [GUI Memory]: 57 MB (+447kb) [00:00:19]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 58 MB (+874kb) [00:00:19]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 59 MB (+635kb) [00:00:19]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 485 MB (+1261kb) [00:00:20]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 60 MB (+914kb) [00:00:20]
+// [Engine Memory]: 485 MB (+606kb) [00:00:20]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 60 MB (+497kb) [00:00:20]
+// [Engine Memory]: 488 MB (+2752kb) [00:00:20]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 61 MB (+978kb) [00:00:20]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 61 MB (+497kb) [00:00:20]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 62 MB (+978kb) [00:00:20]
+// [Engine Memory]: 489 MB (+913kb) [00:00:20]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 490 MB (+946kb) [00:00:20]
+// [Engine Memory]: 491 MB (+1081kb) [00:00:20]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Project name: nes; location: C:/Users/nfxz/Desktop/Project/FPGA/nes; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 748.430 ; gain = 201.559 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 491 MB (+286kb) [00:00:22]
+// [Engine Memory]: 492 MB (+921kb) [00:00:22]
+// [GUI Memory]: 63 MB (+1124kb) [00:00:22]
+// [Engine Memory]: 493 MB (+1658kb) [00:00:22]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// a:a (ch:JFrame): Critical Messages: addNotify
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 67 MB (+3488kb) [00:00:23]
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Project 1-19] Could not find the file 'C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_TEST_behav.wcfg'.", 0, false, false, false, true, false); // d:a (JViewport:JComponent, a:a) - Popup Trigger
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // r:aG
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv)]", 2); // u:k (I:JPanel, ch:JFrame)
+// [GUI Memory]: 69 MB (+2738kb) [00:00:38]
+// [Engine Memory]: 493 MB (+12kb) [00:00:40]
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 25); // w:Y (v:I, ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// [Engine Memory]: 495 MB (+2265kb) [00:00:42]
+selectMenuItem((HResource) null, "localhost:3121,xilinx_tcf/Digilent/210274592585A,PARAM.FREQUENCY:15000000"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// cm:N (ch:JFrame):  Open Hardware Target : addNotify
+// [GUI Memory]: 73 MB (+3958kb) [00:00:42]
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 80 MB (+6697kb) [00:00:42]
+// [Engine Memory]: 498 MB (+2629kb) [00:00:42]
+// [Engine Memory]: 503 MB (+5758kb) [00:00:43]
+// Tcl Message: open_hw 
+// Tcl Message: connect_hw_server -url localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// HMemoryUtils.trashcanNow. Engine heap size: 507 MB. GUI used memory: 44 MB. Current time: 4/23/15 8:48:09 AM
+// [Engine Memory]: 507 MB (+3219kb) [00:00:45]
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2014.4   **** Build date : Nov 18 2014-18:09:44     ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application   ****** Xilinx hw_server v2014.4   **** Build date : Nov 18 2014-18:09:44     ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application   
+// [Engine Memory]: 507 MB (+192kb) [00:00:50]
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 748.430 ; gain = 0.000 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592585A] 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592585A] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274592585A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.bit} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Open Hardware Target"); // cm:N (ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 27, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// [Engine Memory]: 507 MB (+77kb) [00:00:52]
+selectMenuItem((HResource) null, "xc7a100t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.bit} [lindex [get_hw_devices] 0] 
+// [Engine Memory]: 516 MB (+9293kb) [00:00:55]
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// [GUI Memory]: 82 MB (+2611kb) [00:01:00]
+// [GUI Memory]: 83 MB (+1213kb) [00:03:48]
+// [GUI Memory]: 83 MB (+47kb) [00:03:53]
+// [GUI Memory]: 84 MB (+894kb) [00:03:58]
+// [GUI Memory]: 84 MB (+45kb) [00:04:03]
+// [GUI Memory]: 84 MB (+135kb) [00:04:08]
+// [GUI Memory]: 85 MB (+805kb) [00:04:13]
+// [GUI Memory]: 85 MB (+168kb) [00:04:18]
+// [GUI Memory]: 85 MB (+48kb) [00:04:23]
+// [GUI Memory]: 86 MB (+890kb) [00:04:28]
+// [GUI Memory]: 86 MB (+52kb) [00:04:33]
+// [GUI Memory]: 86 MB (+132kb) [00:04:38]
+// [GUI Memory]: 86 MB (+47kb) [00:04:43]
+// [GUI Memory]: 87 MB (+925kb) [00:04:48]
+// [GUI Memory]: 87 MB (+50kb) [00:04:53]
+// [GUI Memory]: 87 MB (+133kb) [00:04:58]
+// [GUI Memory]: 88 MB (+297kb) [00:26:34]
+// [GUI Memory]: 88 MB (+169kb) [00:26:39]
+// [GUI Memory]: 88 MB (+57kb) [00:26:44]
+// [GUI Memory]: 89 MB (+860kb) [00:26:49]
+// [GUI Memory]: 89 MB (+57kb) [00:26:54]
+// [GUI Memory]: 89 MB (+147kb) [00:26:59]
+// [GUI Memory]: 90 MB (+790kb) [00:27:04]
+// [GUI Memory]: 90 MB (+107kb) [00:27:09]
+// [GUI Memory]: 90 MB (+57kb) [00:27:14]
+// [GUI Memory]: 90 MB (+148kb) [00:27:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 516 MB. GUI used memory: 45 MB. Current time: 4/23/15 9:18:09 AM
+// [Engine Memory]: 520 MB (+4669kb) [00:42:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 44 MB. Current time: 4/23/15 9:48:09 AM
+// [GUI Memory]: 90 MB (+90kb) [01:24:02]
+// [GUI Memory]: 90 MB (+17kb) [01:24:07]
+// [GUI Memory]: 91 MB (+772kb) [01:24:12]
+// [GUI Memory]: 91 MB (+124kb) [01:24:17]
+// [GUI Memory]: 91 MB (+104kb) [01:24:22]
+// [GUI Memory]: 92 MB (+694kb) [01:24:27]
+// [GUI Memory]: 92 MB (+217kb) [01:24:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 42 MB. Current time: 4/23/15 10:18:09 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 42 MB. Current time: 4/23/15 10:48:09 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 41 MB. Current time: 4/23/15 11:18:10 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 41 MB. Current time: 4/23/15 11:48:10 AM
+// [GUI Memory]: 93 MB (+630kb) [03:26:13]
+// [GUI Memory]: 93 MB (+249kb) [03:26:18]
+// [GUI Memory]: 93 MB (+13kb) [03:26:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 40 MB. Current time: 4/23/15 12:18:10 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 40 MB. Current time: 4/23/15 12:48:10 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 40 MB. Current time: 4/23/15 1:18:10 PM
+// [GUI Memory]: 93 MB (+205kb) [04:56:27]
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 40 MB. Current time: 4/23/15 1:48:11 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 40 MB. Current time: 4/23/15 2:18:11 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 40 MB. Current time: 4/23/15 2:48:11 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 40 MB. Current time: 4/23/15 3:18:11 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 40 MB. Current time: 4/23/15 3:48:12 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 40 MB. Current time: 4/23/15 4:18:12 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 40 MB. Current time: 4/23/15 4:48:12 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 41 MB. Current time: 4/23/15 5:18:12 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 41 MB. Current time: 4/23/15 5:48:12 PM
+// [GUI Memory]: 93 MB (+153kb) [09:26:20]
+// [GUI Memory]: 93 MB (+257kb) [09:26:30]
+// [GUI Memory]: 93 MB (+27kb) [09:26:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 40 MB. Current time: 4/23/15 6:18:13 PM
+// [Engine Memory]: 524 MB (+4272kb) [09:55:41]
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 41 MB. Current time: 4/23/15 6:48:13 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 41 MB. Current time: 4/23/15 7:18:13 PM
+// [GUI Memory]: 94 MB (+482kb) [10:47:08]
+// [GUI Memory]: 94 MB (+221kb) [10:47:18]
+// [GUI Memory]: 94 MB (+144kb) [10:47:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 39 MB. Current time: 4/23/15 7:48:13 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 40 MB. Current time: 4/23/15 8:18:13 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 40 MB. Current time: 4/23/15 8:48:14 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 40 MB. Current time: 4/23/15 9:18:14 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 41 MB. Current time: 4/23/15 9:48:14 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 40 MB. Current time: 4/23/15 10:18:14 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 40 MB. Current time: 4/23/15 10:48:15 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 40 MB. Current time: 4/23/15 11:18:15 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 40 MB. Current time: 4/23/15 11:48:15 PM
+// Elapsed time: 55230 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 27, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// Elapsed time: 303 seconds
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // v:JideButton (H:H, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 525 MB. GUI used memory: 41 MB. Current time: 4/24/15 12:14:05 AM
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // Z:JMenuItem (JPopupMenu:JComponent, ch:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // R:JideMenu (CommandMenuBar:CommandBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+// [Engine Memory]: 525 MB (+888kb) [15:26:42]
+closeFrame(PAResourceOtoP.PAViews_DEBUG_PROBES, "Debug Probes"); // al:DockableFrame (FrameContainer:JideTabbedPane, ch:JFrame)
+closeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // al:DockableFrame (FrameContainer:JideTabbedPane, ch:JFrame)
+closeFrame(RDIResource.RDIViews_PROPERTIES, "Hardware Device Properties"); // al:DockableFrame (FrameContainer:JideTabbedPane, ch:JFrame)
+// Elapsed time: 30 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv), cpu_test - CPU6502 (CPU.sv)]", 9); // u:k (I:JPanel, ch:JFrame)
+// [Engine Memory]: 527 MB (+2514kb) [15:27:16]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv), cpu_test - CPU6502 (CPU.sv), m_fsm - MAIN_LOOP_FSM (main_loop.sv)]", 11, true); // u:k (I:JPanel, ch:JFrame) - Node
+// [Engine Memory]: 528 MB (+237kb) [15:27:16]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU_PPU_CHIP_TEST (CPU_PPU_CHIP_TEST.sv), cpu_test - CPU6502 (CPU.sv), m_fsm - MAIN_LOOP_FSM (main_loop.sv)]", 11, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+// [Engine Memory]: 528 MB (+860kb) [15:27:16]
+// [Engine Memory]: 529 MB (+176kb) [15:27:21]
+// Elapsed time: 12 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, (String) null); // k:JideButton (JPanel:JComponent, ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 27, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q:a (aO:JPanel, aC:ac)
+// [Engine Memory]: 530 MB (+929kb) [15:27:38]
+// Elapsed time: 18 seconds
+dismissFileChooser();
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, aC:ac)
+// 'p' command handler elapsed time: 21 seconds
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+selectCodeEditor("main_loop.sv", 117, 181); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 534 MB (+4841kb) [15:27:54]
+// [GUI Memory]: 94 MB (+0kb) [15:28:24]
+// Elapsed time: 44 seconds
+closeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // al:DockableFrame (FrameContainer:JideTabbedPane, ch:JFrame)
+// [Engine Memory]: 534 MB (+16kb) [15:28:41]
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // v:JideButton (H:H, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// Elapsed time: 162 seconds
+selectCodeEditor("main_loop.sv", 604, 282); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("main_loop.sv", 293, 414); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("main_loop.sv", 369, 465); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 106 seconds
+selectCodeEditor("main_loop.sv", 453, 463); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 191 seconds
+selectCodeEditor("main_loop.sv", 311, 193); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 551 MB (+17633kb) [15:37:21]
+// HMemoryUtils.trashcanNow. Engine heap size: 551 MB. GUI used memory: 47 MB. Current time: 4/24/15 12:24:46 AM
+// Elapsed time: 15 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ROL", true); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ROL"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ROL"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ROL"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ROL"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ROL"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ROL"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ROL"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ROL"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ROL"); // l:an (c:JComboBox, ch:JFrame)
+// [GUI Memory]: 94 MB (+11kb) [15:39:56]
+// [GUI Memory]: 95 MB (+596kb) [15:40:01]
+// [GUI Memory]: 95 MB (+66kb) [15:40:06]
+// [GUI Memory]: 96 MB (+1624kb) [15:40:11]
+// [GUI Memory]: 96 MB (+68kb) [15:40:16]
+// [GUI Memory]: 97 MB (+583kb) [15:40:21]
+// Elapsed time: 282 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ROL"); // l:an (c:JComboBox, ch:JFrame)
+// Elapsed time: 71 seconds
+selectCodeEditor("main_loop.sv", 284, 228); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 98 MB (+997kb) [15:46:00]
+// [GUI Memory]: 98 MB (+50kb) [15:46:05]
+// [GUI Memory]: 98 MB (+305kb) [15:46:10]
+// Elapsed time: 231 seconds
+selectCodeEditor("main_loop.sv", 221, 285); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 221, 285, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "R_TMP", true); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "R_TMP"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "R_TMP"); // l:an (c:JComboBox, ch:JFrame)
+// Elapsed time: 69 seconds
+selectCodeEditor("main_loop.sv", 562, 373); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 51 seconds
+closeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // al:DockableFrame (FrameContainer:JideTabbedPane, ch:JFrame)
+closeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // al:DockableFrame (FrameContainer:JideTabbedPane, ch:JFrame)
+closeFrame(PAResourceOtoP.PAViews_SERIAL_IO_LINKS, "Serial I/O Links"); // al:DockableFrame (FrameContainer:JideTabbedPane, ch:JFrame)
+closeFrame(PAResourceOtoP.PAViews_SERIAL_IO_SCANS, "Serial I/O Scans"); // al:DockableFrame (FrameContainer:JideTabbedPane, ch:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("main_loop.sv", 372, 263); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 167 seconds
+selectCodeEditor("main_loop.sv", 390, 509); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 45 seconds
+selectCodeEditor("main_loop.sv", 826, 255); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 98 MB (+38kb) [15:55:15]
+// [GUI Memory]: 98 MB (+176kb) [15:55:20]
+// [GUI Memory]: 99 MB (+965kb) [15:55:25]
+// [GUI Memory]: 100 MB (+204kb) [15:55:30]
+// [GUI Memory]: 100 MB (+47kb) [15:55:35]
+// [GUI Memory]: 101 MB (+1095kb) [15:55:40]
+// [GUI Memory]: 101 MB (+69kb) [15:55:45]
+// [GUI Memory]: 101 MB (+174kb) [15:55:50]
+// [GUI Memory]: 102 MB (+966kb) [15:55:55]
+// [GUI Memory]: 102 MB (+206kb) [15:56:00]
+// [GUI Memory]: 102 MB (+38kb) [15:56:05]
+// Elapsed time: 193 seconds
+selectCodeEditor("main_loop.sv", 748, 158); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 39 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "CPY"); // l:an (c:JComboBox, ch:JFrame)
+selectCodeEditor("main_loop.sv", 917, 337); // bi:J (JPanel:JComponent, ch:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INY", true); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INY"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INY"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INY"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INY"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INY"); // l:an (c:JComboBox, ch:JFrame)
+// Elapsed time: 36 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INC"); // l:an (c:JComboBox, ch:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("main_loop.sv", 381, 558); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 381, 558, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INC", true); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INC"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INC"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INC"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INC"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INC"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INC"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INC"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INC"); // l:an (c:JComboBox, ch:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INC"); // l:an (c:JComboBox, ch:JFrame)
+// Elapsed time: 11 seconds
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "INC"); // l:an (c:JComboBox, ch:JFrame)
+// Elapsed time: 83 seconds
+selectCodeEditor("main_loop.sv", 308, 436); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 102 MB (+436kb) [16:00:52]
+// [GUI Memory]: 103 MB (+51kb) [16:00:57]
+// [GUI Memory]: 103 MB (+187kb) [16:01:02]
+// [GUI Memory]: 103 MB (+53kb) [16:01:07]
+// [GUI Memory]: 103 MB (+342kb) [16:01:12]
+// [Engine Memory]: 551 MB (+507kb) [16:01:51]
+// [GUI Memory]: 103 MB (+163kb) [16:03:15]
+// [GUI Memory]: 103 MB (+176kb) [16:03:20]
+// [GUI Memory]: 103 MB (+62kb) [16:03:25]
+// [GUI Memory]: 104 MB (+178kb) [16:03:30]
+// [GUI Memory]: 104 MB (+62kb) [16:03:35]
+// Elapsed time: 243 seconds
+selectCodeEditor("main_loop.sv", 448, 628); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 321, 520); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 341, 519); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 299, 496); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 310, 407); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 299, 371); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 566 MB (+15581kb) [16:05:10]
+// Elapsed time: 45 seconds
+selectCodeEditor("main_loop.sv", 209, 311); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 213, 366); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 238, 369); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 213, 398); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 211, 467); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 211, 515); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 208, 553); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 212, 572); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 211, 608); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'v'); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 105 MB (+1111kb) [16:05:46]
+selectCodeEditor("main_loop.sv", 290, 493); // bi:J (JPanel:JComponent, ch:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("main_loop.sv", 317, 490); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 566 MB. GUI used memory: 49 MB. Current time: 4/24/15 12:54:46 AM
+// Elapsed time: 95 seconds
+selectCodeEditor("main_loop.sv", 599, 311); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 548, 308); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 548, 308, false, false, false, false, true); // bi:J (JPanel:JComponent, ch:JFrame) - Double Click
+typeControlKey((HResource) null, "main_loop.sv", 'c'); // bi:J (JPanel:JComponent, ch:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "TMP_ADDR"); // l:an (c:JComboBox, ch:JFrame)
+selectCodeEditor("main_loop.sv", 605, 370); // bi:J (JPanel:JComponent, ch:JFrame)
+selectCodeEditor("main_loop.sv", 604, 367); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("main_loop.sv", 662, 380); // bi:J (JPanel:JComponent, ch:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // v:JideButton (CommandBar:DockableBar, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// cm:N (ch:JFrame):  Generate Bitstream : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 24 00:55:29 2015] Launched synth_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/synth_1/runme.log [Fri Apr 24 00:55:29 2015] Launched impl_1... Run output will be captured here: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // cm:N (ch:JFrame)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 571 MB. GUI used memory: 49 MB. Current time: 4/24/15 12:59:06 AM
+// [Engine Memory]: 571 MB (+4784kb) [16:11:42]
+// TclEventType: RUN_COMPLETED
+// Q:al (ch:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 287 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:al)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// cm:N (ch:JFrame):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 594 MB (+24326kb) [16:12:54]
+// HMemoryUtils.trashcanNow. Engine heap size: 688 MB. GUI used memory: 48 MB. Current time: 4/24/15 1:00:21 AM
+// [Engine Memory]: 800 MB (+216150kb) [16:12:59]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 822 MB (+23076kb) [16:13:03]
+// [Engine Memory]: 822 MB (+24kb) [16:13:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 824 MB. GUI used memory: 48 MB. Current time: 4/24/15 1:00:27 AM
+// [Engine Memory]: 825 MB (+3256kb) [16:13:03]
+// [Engine Memory]: 841 MB (+16711kb) [16:13:03]
+// [Engine Memory]: 928 MB (+90644kb) [16:13:04]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi.loadEngineXgd elapsed time: 1.8s
+// [Engine Memory]: 929 MB (+1474kb) [16:13:08]
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 105 MB (+633kb) [16:13:10]
+// [GUI Memory]: 106 MB (+1086kb) [16:13:10]
+// [Engine Memory]: 932 MB (+3002kb) [16:13:11]
+// Device: addNotify
+// [Engine Memory]: 934 MB (+2031kb) [16:13:11]
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 171 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2014.4 
+// Tcl Message: Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml... Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/nfxz/Desktop/Project/FPGA/nes/.Xil/Vivado-16228-nfxz-pc/dcp/CPU_PPU_CHIP_TEST.xdc] Finished Parsing XDC File [C:/Users/nfxz/Desktop/Project/FPGA/nes/.Xil/Vivado-16228-nfxz-pc/dcp/CPU_PPU_CHIP_TEST.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1032.285 ; gain = 5.918 
+// Tcl Message: Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1032.285 ; gain = 5.918 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 1149.867 ; gain = 355.383 
+// [Engine Memory]: 937 MB (+2871kb) [16:13:12]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 944 MB (+7819kb) [16:13:12]
+// 'dg' command handler elapsed time: 19 seconds
+// Device view-level: 0.0
+// [Engine Memory]: 948 MB (+3739kb) [16:13:13]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 964 MB (+17616kb) [16:13:14]
+// [Engine Memory]: 966 MB (+1843kb) [16:13:14]
+// [Engine Memory]: 977 MB (+11321kb) [16:13:14]
+// Elapsed time: 20 seconds
+dismissDialog("Open Implemented Design"); // cm:N (ch:JFrame)
+// [Engine Memory]: 978 MB (+1380kb) [16:13:14]
+// [Engine Memory]: 979 MB (+905kb) [16:13:15]
+// [Engine Memory]: 981 MB (+1785kb) [16:13:15]
+// [Engine Memory]: 994 MB (+13938kb) [16:13:15]
+// [Engine Memory]: 1,009 MB (+15470kb) [16:13:20]
+// [GUI Memory]: 108 MB (+1283kb) [16:13:24]
+// [Engine Memory]: 1,012 MB (+3608kb) [16:13:24]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 81 MB. Current time: 4/24/15 1:00:51 AM
+// [Engine Memory]: 1,186 MB (+181714kb) [16:13:29]
+// RouteApi.initDelayMediator elapsed time: 18.1s
+// Elapsed time: 20 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, (String) null); // k:JideButton (JPanel:JComponent, ch:JFrame)
+// [Engine Memory]: 1,323 MB (+144359kb) [16:13:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 80 MB. Current time: 4/24/15 1:00:58 AM
+// [Engine Memory]: 1,325 MB (+1601kb) [16:13:34]
+// [Engine Memory]: 1,346 MB (+21622kb) [16:14:29]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 80 MB. Current time: 4/24/15 1:01:56 AM
+// Elapsed time: 58 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 36, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ac (ch:JFrame): Program Device: addNotify
+// [GUI Memory]: 109 MB (+1410kb) [16:14:37]
+// [GUI Memory]: 110 MB (+785kb) [16:14:42]
+// [GUI Memory]: 110 MB (+64kb) [16:14:47]
+// Elapsed time: 17 seconds
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ac)
+// cm:N (ch:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ac (ch:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.bit} [lindex [get_hw_devices] 0] 
+// [GUI Memory]: 112 MB (+2297kb) [16:14:51]
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'p' command handler elapsed time: 20 seconds
+dismissDialog("Program Device"); // cm:N (ch:JFrame)
+// [GUI Memory]: 113 MB (+561kb) [16:18:51]
+// [GUI Memory]: 113 MB (+61kb) [16:18:56]
+// [GUI Memory]: 113 MB (+770kb) [16:19:01]
+// [GUI Memory]: 113 MB (+63kb) [16:19:06]
+// [GUI Memory]: 114 MB (+134kb) [16:19:11]
+// [GUI Memory]: 114 MB (+194kb) [16:26:11]
+// [GUI Memory]: 114 MB (+55kb) [16:26:16]
+// [GUI Memory]: 115 MB (+822kb) [16:26:21]
+// [GUI Memory]: 115 MB (+55kb) [16:26:26]
+// [GUI Memory]: 115 MB (+801kb) [16:26:31]
+// [GUI Memory]: 115 MB (+55kb) [16:26:36]
+// [GUI Memory]: 116 MB (+157kb) [16:26:41]
+// [GUI Memory]: 116 MB (+724kb) [16:26:46]
+// [GUI Memory]: 116 MB (+136kb) [16:26:51]
+// [GUI Memory]: 117 MB (+738kb) [16:26:56]
+// [GUI Memory]: 117 MB (+139kb) [16:27:01]
+// [GUI Memory]: 117 MB (+57kb) [16:27:06]
+// [GUI Memory]: 118 MB (+819kb) [16:27:11]
+// [GUI Memory]: 118 MB (+57kb) [16:27:16]
+// [GUI Memory]: 118 MB (+295kb) [16:35:11]
+// [GUI Memory]: 118 MB (+60kb) [16:35:16]
+// [GUI Memory]: 119 MB (+758kb) [16:35:21]
+// [GUI Memory]: 119 MB (+60kb) [16:35:26]
+// [GUI Memory]: 119 MB (+144kb) [16:35:31]
+// [GUI Memory]: 120 MB (+190kb) [16:43:32]
+// [GUI Memory]: 120 MB (+8kb) [16:43:37]
+// [GUI Memory]: 120 MB (+786kb) [16:43:42]
+// [GUI Memory]: 120 MB (+86kb) [16:43:47]
+// [GUI Memory]: 121 MB (+785kb) [16:43:52]
+// [GUI Memory]: 121 MB (+13kb) [16:43:57]
+// [GUI Memory]: 121 MB (+168kb) [16:44:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 81 MB. Current time: 4/24/15 1:31:56 AM
+// [GUI Memory]: 122 MB (+349kb) [17:02:08]
+// [GUI Memory]: 122 MB (+218kb) [17:02:13]
+// [GUI Memory]: 122 MB (+538kb) [17:02:18]
+// [GUI Memory]: 122 MB (+71kb) [17:11:08]
+// [GUI Memory]: 123 MB (+651kb) [17:11:13]
+// [GUI Memory]: 123 MB (+204kb) [17:11:18]
+// [GUI Memory]: 124 MB (+651kb) [17:11:23]
+// [GUI Memory]: 124 MB (+204kb) [17:11:28]
+// [GUI Memory]: 124 MB (+21kb) [17:11:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 80 MB. Current time: 4/24/15 2:01:56 AM
+// [GUI Memory]: 125 MB (+501kb) [17:33:39]
+// [GUI Memory]: 125 MB (+10kb) [17:33:44]
+// [GUI Memory]: 125 MB (+218kb) [17:33:49]
+// [GUI Memory]: 125 MB (+363kb) [17:33:54]
+// [GUI Memory]: 126 MB (+454kb) [17:43:25]
+// [GUI Memory]: 126 MB (+141kb) [17:43:30]
+// [GUI Memory]: 126 MB (+485kb) [17:43:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 2:31:56 AM
+// [GUI Memory]: 126 MB (+321kb) [18:04:16]
+// [GUI Memory]: 127 MB (+134kb) [18:04:21]
+// [GUI Memory]: 127 MB (+124kb) [18:14:26]
+// [GUI Memory]: 127 MB (+260kb) [18:14:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 79 MB. Current time: 4/24/15 3:01:56 AM
+// [GUI Memory]: 128 MB (+737kb) [18:34:52]
+// [GUI Memory]: 128 MB (+37kb) [18:34:57]
+// [GUI Memory]: 129 MB (+844kb) [18:35:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 3:31:57 AM
+// [GUI Memory]: 129 MB (+460kb) [19:05:44]
+// [GUI Memory]: 129 MB (+160kb) [19:05:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 4:01:57 AM
+// [GUI Memory]: 130 MB (+579kb) [19:35:45]
+// [GUI Memory]: 130 MB (+158kb) [19:35:50]
+// [GUI Memory]: 130 MB (+657kb) [19:35:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 4:31:57 AM
+// [GUI Memory]: 130 MB (+15kb) [20:06:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 5:01:57 AM
+// [GUI Memory]: 131 MB (+477kb) [20:35:58]
+// [GUI Memory]: 131 MB (+149kb) [20:36:03]
+// [GUI Memory]: 131 MB (+150kb) [20:36:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 5:31:58 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 6:01:58 AM
+// [GUI Memory]: 132 MB (+341kb) [21:36:46]
+// [GUI Memory]: 132 MB (+208kb) [21:36:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 6:31:58 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 7:01:58 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 7:31:58 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 8:01:59 AM
+// [GUI Memory]: 132 MB (+561kb) [23:36:52]
+// [GUI Memory]: 133 MB (+285kb) [23:37:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 8:31:59 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 79 MB. Current time: 4/24/15 9:01:59 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 9:31:59 AM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,346 MB. GUI used memory: 78 MB. Current time: 4/24/15 10:01:59 AM

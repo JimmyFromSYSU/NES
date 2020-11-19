@@ -1,0 +1,626 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:24:04 MST 2014
+| Date         : Fri Apr 24 00:58:04 2015
+| Host         : nfxz-pc running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_PPU_CHIP_TEST_control_sets_placed.rpt
+| Design       : CPU_PPU_CHIP_TEST
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   573 |
+| Minimum Number of register sites lost to control set restrictions |  1164 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             258 |          127 |
+| No           | No                    | Yes                    |               6 |            5 |
+| No           | Yes                   | No                     |              87 |           36 |
+| Yes          | No                    | No                     |            3283 |         1068 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              98 |           37 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+--------------------------------------------+---------------------------------------------+------------------+----------------+
+|              Clock Signal             |                Enable Signal               |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++---------------------------------------+--------------------------------------------+---------------------------------------------+------------------+----------------+
+|  cpu_test/m_fsm/finsh_nmi_status6_out |                                            | cpu_test/m_fsm/nmi_pulse/nmi_p              |                1 |              1 |
+| ~vs/chv/ch/h_s/Hsync0                 |                                            | nmi                                         |                1 |              1 |
+|  vs/chv/ch/rset                       |                                            | vs/chv/ch/set                               |                1 |              1 |
+|  vs/chv/cv/v_s/O25                    |                                            |                                             |                1 |              1 |
+|  vs/chv/cv/rset                       |                                            | vs/chv/cv/set                               |                1 |              1 |
+|  nmi                                  |                                            | sw_IBUF[0]                                  |                1 |              2 |
+|  ppu_test/pmf/wait_cpu/CLK            |                                            |                                             |                2 |              2 |
+|  sn/p_0_in                            |                                            |                                             |                2 |              3 |
+| ~vs/chv/ch/h_s/O1                     |                                            |                                             |                1 |              3 |
+|  nclk_BUFG                            | ppu_test/plb/palette_time/n_0_Q[6]_i_2__3  | ppu_test/plb/palette_time/n_0_Q[6]_i_1__3   |                1 |              4 |
+|  nclk_BUFG                            | ppu_test/pbf/name_time/O1                  | ppu_test/pbf/name_time/O7                   |                1 |              4 |
+|  nclk_BUFG                            | ppu_test/pmf/wait_frame/n_0_Q[3]_i_2__0    |                                             |                1 |              4 |
+|  nclk_BUFG                            | ppu_test/pmf/wait_frame/n_0_Q[3]_i_2__0    | ppu_test/pmf/wait_frame/n_0_Q[3]_i_1__1     |                1 |              4 |
+| ~nclk_BUFG                            | cpu_test/a_fsm/O14[0]                      | cpu_test/m_fsm/SR[0]                        |                1 |              4 |
+|  clk_IBUF_BUFG                        | bi/testfsm/c5byte/n_0_Q[6]_i_2__2          | bi/testfsm/c5byte/n_0_Q[6]_i_1__5           |                1 |              5 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I65[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I66[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I67[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I68[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I69[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I70[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I71[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I72[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I73[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I74[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I75[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I76[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I77[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I78[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I79[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I80[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I81[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I82[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I83[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I84[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I85[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I86[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I87[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I88[0]                  |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I89[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I90[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I91[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I92[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I93[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I94[0]                  |                                             |                1 |              6 |
+| ~nclk_BUFG                            | ppu_test/psf/sp_time/n_0_Q[5]_i_2__1       | ppu_test/psf/sp_time/n_0_Q[5]_i_1__3        |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I95[0]                  |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I96[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I97[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I98[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I99[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/O21[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/O22[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/O23[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/O24[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/O25[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | bi/testfsm/c8bit/n_0_Q[6]_i_2__1           | bi/testfsm/c8bit/n_0_Q[6]_i_1__4            |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/O26[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | cpu_test/a_fsm/O10                         |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I100[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I101[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I102[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I103[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I104[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I105[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I106[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I109[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I107[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I108[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I110[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I111[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I112[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I113[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I114[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I115[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I116[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I117[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I118[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I119[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I120[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I121[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I122[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I123[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I124[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I125[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I126[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I127[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I128[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I129[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I130[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I131[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I132[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I133[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I134[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I135[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I136[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I137[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I138[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I139[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I140[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I141[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I142[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I143[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I144[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I145[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I146[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I147[0]                 |                                             |                5 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I148[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I149[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I150[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I151[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I152[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I153[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I154[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I155[0]                 |                                             |                5 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I156[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I157[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I158[0]                 |                                             |                5 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I159[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I160[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I161[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I162[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I163[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I164[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I165[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I166[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I167[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I168[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I169[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I170[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I171[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I172[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I173[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I174[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I175[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I176[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I177[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I178[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I179[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I180[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I181[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I182[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I183[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I184[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I185[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I186[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I187[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I188[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I189[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I190[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I191[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I192[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I193[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I194[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I195[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I196[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I197[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I198[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I199[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I200[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I201[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I202[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I203[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I204[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I205[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I206[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I207[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I208[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I209[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I21[0]                  |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I210[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I211[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I212[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I213[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I214[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I215[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I216[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I217[0]                 |                                             |                5 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I218[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I219[0]                 |                                             |                6 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I22[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I220[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I221[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I222[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I223[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I224[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I225[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I226[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I227[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I228[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I229[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I23[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I230[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I231[0]                 |                                             |                6 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I232[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I233[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I234[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I235[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I236[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I237[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I238[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I239[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I24[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I240[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I241[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I242[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I243[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I244[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I245[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I246[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I247[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I248[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I249[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I25[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I250[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I251[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I252[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I253[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I254[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I255[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I256[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I257[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I258[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I259[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I26[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I260[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I261[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I262[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I263[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I264[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I265[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I266[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I267[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I268[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I269[0]                 |                                             |                5 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I27[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I270[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I271[0]                 |                                             |                5 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I272[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I273[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I274[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I275[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I276[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I277[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I278[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I279[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I28[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I280[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I281[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I282[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I283[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I284[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I285[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I286[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I287[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I288[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I289[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I29[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I290[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I291[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I292[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I293[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I294[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I295[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I296[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I297[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I298[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I299[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I30[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I300[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I301[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I302[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I303[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I304[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I305[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I306[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I307[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I308[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I309[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I31[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I310[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I311[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I312[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I313[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I314[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I315[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I316[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I317[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I318[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I319[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I32[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I320[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I321[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I322[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I323[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I324[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I325[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I326[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I327[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I328[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I329[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I33[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I330[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I331[0]                 |                                             |                5 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I332[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I333[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I334[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I335[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I336[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I337[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I338[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I339[0]                 |                                             |                6 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I34[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I340[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I341[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I342[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I343[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I344[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I345[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I346[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I347[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I348[0]                 |                                             |                5 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I349[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I35[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I350[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I351[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I352[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I353[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I354[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I355[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I356[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I357[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I358[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I359[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I36[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I360[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I361[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I362[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I363[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I364[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I365[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I366[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I367[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I368[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I369[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I37[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I370[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I371[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I372[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I373[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I374[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I375[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I376[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I377[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I378[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I379[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I38[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I380[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I381[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I382[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I383[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I384[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I385[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I386[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I387[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I388[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I389[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I39[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I390[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I391[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I392[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I393[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I394[0]                 |                                             |                5 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I395[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I396[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I397[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I398[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I399[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I40[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I400[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I401[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I402[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I403[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I404[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I405[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I406[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I407[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I408[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I409[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I41[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I410[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I411[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I412[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I413[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I414[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I415[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I416[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I417[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I418[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I419[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I42[0]                  |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I420[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I421[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I422[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I423[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I424[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I425[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I426[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I427[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I428[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I429[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I43[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I430[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I431[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I432[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I433[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I434[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I435[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I436[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I437[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I438[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I439[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I44[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I440[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I441[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I442[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I443[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I444[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I445[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I446[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I447[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I448[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I449[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I45[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I450[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I451[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I452[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I453[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I454[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I455[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I456[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I457[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I458[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I459[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I46[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I460[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I461[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I462[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I463[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I464[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I465[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I466[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I467[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I468[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I469[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I47[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I470[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I471[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I472[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I473[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I474[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I475[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I476[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I477[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I478[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I479[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I48[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I480[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I481[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I482[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I483[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I484[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I485[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I486[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I487[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I488[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I489[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I49[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I490[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I491[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I492[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I493[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I494[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I495[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I496[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I497[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I498[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I499[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I50[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I500[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I501[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I502[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I503[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I504[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I505[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I506[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I507[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I508[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I509[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I51[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I510[0]                 |                                             |                6 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I511[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I512[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I513[0]                 |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I514[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I515[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I516[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I517[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I518[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I519[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I52[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I520[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I521[0]                 |                                             |                4 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I522[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I523[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I524[0]                 |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I525[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I526[0]                 |                                             |                3 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I53[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I54[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I55[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I56[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I57[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I58[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I59[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I60[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I61[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I62[0]                  |                                             |                1 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I63[0]                  |                                             |                2 |              6 |
+|  clk_IBUF_BUFG                        | ppu_test/plb/x_pos/I64[0]                  |                                             |                3 |              6 |
+|  cpu_test/m_fsm/n_0_dout_reg[7]_i_2   |                                            |                                             |                7 |              8 |
+| ~nclk_BUFG                            | ppu_test/plb/out8                          |                                             |                2 |              8 |
+| ~nclk_BUFG                            | ppu_test/dma/E[0]                          |                                             |                3 |              8 |
+| ~nclk_BUFG                            | ppu_test/pbf/E[0]                          |                                             |                3 |              8 |
+|  ppu_test/psf/n_0_OAM_addr_reg[7]_i_2 |                                            |                                             |                4 |              8 |
+| ~nclk_BUFG                            | cpu_test/a_fsm/n_0_PC[15]_i_1              |                                             |                6 |              8 |
+| ~nclk_BUFG                            | ppu_test/pbf/n_0_vrom_color_tmp[7]_i_1     |                                             |                2 |              8 |
+| ~nclk_BUFG                            | cpu_test/a_fsm/n_0_TMP_INDRECT_ADDR[7]_i_1 | cpu_test/a_fsm/n_0_TMP_INDRECT_ADDR[15]_i_1 |                2 |              8 |
+| ~nclk_BUFG                            | cpu_test/a_fsm/n_0_TMP_INDRECT_ADDR[7]_i_1 |                                             |                1 |              8 |
+|  nclk_BUFG                            | cpu_test/m_fsm/n_0_TMP[7]_i_1              |                                             |                7 |              8 |
+| ~nclk_BUFG                            | cpu_test/a_fsm/n_0_TMP_ADDR[7]_i_1         |                                             |                7 |              8 |
+| ~nclk_BUFG                            | cpu_test/a_fsm/n_0_TMP_ADDR[15]_i_1        |                                             |                4 |              8 |
+| ~nclk_BUFG                            | cpu_test/a_fsm/n_0_PC[7]_i_1               |                                             |                8 |              8 |
+| ~nclk_BUFG                            | cpu_test/m_fsm/n_0_A[7]_i_2                | cpu_test/m_fsm/n_0_A[7]_i_1                 |                5 |              8 |
+| ~nclk_BUFG                            | cpu_test/m_fsm/n_0_R_TMP[7]_i_1            |                                             |                3 |              8 |
+| ~nclk_BUFG                            | cpu_test/m_fsm/n_0_SP_reg[7]_i_1           |                                             |                2 |              8 |
+| ~nclk_BUFG                            | cpu_test/m_fsm/n_0_X[7]_i_2                | cpu_test/m_fsm/n_0_X[7]_i_1                 |                3 |              8 |
+| ~nclk_BUFG                            | cpu_test/m_fsm/n_0_Y[7]_i_2                | cpu_test/m_fsm/n_0_Y[7]_i_1                 |                5 |              8 |
+| ~nclk_BUFG                            | cpu_test/m_fsm/O54[0]                      |                                             |                2 |              8 |
+| ~nclk_BUFG                            | cpu_test/m_fsm/O54[1]                      |                                             |                3 |              8 |
+| ~nclk_BUFG                            | cpu_test/a_fsm/E[0]                        |                                             |                2 |              8 |
+| ~nclk_BUFG                            | ppu_test/plb/n_0_FSM_onehot_state_reg[2]   |                                             |                2 |              8 |
+| ~nclk_BUFG                            | ppu_test/psf/n_0_data_index[7]_i_1         | ppu_test/psf/n_0_data_y[7]_i_1              |                4 |              8 |
+| ~nclk_BUFG                            | ppu_test/psf/n_0_data_x[7]_i_1             | ppu_test/psf/n_0_data_y[7]_i_1              |                3 |              8 |
+| ~nclk_BUFG                            | ppu_test/psf/n_0_data_y[7]_i_2             | ppu_test/psf/n_0_data_y[7]_i_1              |                4 |              8 |
+| ~nclk_BUFG                            | fetch_BUFG                                 |                                             |                4 |              8 |
+|  nclk_BUFG                            | ppu_test/dma/x_pos/n_0_Q[8]_i_2            | ppu_test/dma/x_pos/n_0_Q[8]_i_1             |                2 |              9 |
+|  clk_IBUF_BUFG                        | bi/testfsm/p_recei/en_recei                |                                             |                5 |              9 |
+|  ppu_test/dma/E[0]                    |                                            |                                             |                5 |             11 |
+| ~vs/chv/ch/h_s/O1                     |                                            | vs/chv/cv/n_0_counter[11]_i_1               |                3 |             11 |
+|  nclk_BUFG                            |                                            | sw_IBUF[0]                                  |               10 |             12 |
+|  clk_IBUF_BUFG                        |                                            | bi/testfsm/O15                              |                5 |             12 |
+|  clk_IBUF_BUFG                        |                                            | vs/chv/ch/clear                             |                3 |             12 |
+|  clk_IBUF_BUFG                        |                                            | bi/testfsm/O1                               |                4 |             13 |
+| ~clk_IBUF_BUFG                        |                                            |                                             |                4 |             15 |
+|  ppu_test/dma/O1[0]                   |                                            |                                             |                5 |             16 |
+|  fetch_BUFG                           |                                            |                                             |                4 |             16 |
+| ~nclk_BUFG                            |                                            |                                             |               13 |             17 |
+|  nclk_BUFG                            | ppu_test/plb/x_pos/n_0_Q[7]_i_1__2         |                                             |               10 |             26 |
+|  nclk_BUFG                            |                                            | ppu_test/pmf/wait_cpu/done_cpu              |               11 |             27 |
+|  nclk_BUFG                            | cpu_test/m_fsm/n_0_NUM[31]_i_1             |                                             |                8 |             32 |
+|  clk_IBUF_BUFG                        |                                            |                                             |               25 |             70 |
+|  nclk_BUFG                            |                                            |                                             |               54 |             88 |
++---------------------------------------+--------------------------------------------+---------------------------------------------+------------------+----------------+
+
+

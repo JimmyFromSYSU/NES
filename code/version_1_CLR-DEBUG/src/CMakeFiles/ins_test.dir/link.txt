@@ -1,0 +1,1 @@
+/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/ins_test.dir/ins_test.cpp.o  -o ins_test  cpu/libcpu.a tool/libtool.a 

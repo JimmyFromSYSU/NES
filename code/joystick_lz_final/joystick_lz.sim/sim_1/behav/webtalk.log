@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Feb 09 23:12:12 2015
+# Process ID: 9112
+# Log file: C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim/sim_1/behav/xsim.dir/test_bentch_control_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:24 . Memory (MB): peak = 91.824 ; gain = 0.020
+
+    while executing
+"webtalk_transmit -clientid 1652960733 -regid "174679548_176449548_210592822_043" -xml C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim..."
+    (file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim/sim_1/behav/xsim.dir/test_bentch_control_behav/webtalk/xsim_webtalk.tcl" line 32)
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 09 23:12:36 2015...

@@ -1,0 +1,64 @@
+when ppu status set 80
+
+// step 3
+2000		= 	10
+//check status(2002)
+// step 9
+2001		=	6
+
+
+ppu addr 3F10:
+F	18	27	38
+F	A	1B	3B
+F	C	10	20
+F	4	16	20
+ppu addr 3F00
+F	17	6	0
+F	3C	10	12
+F	29	9	B
+F	0	10	20
+
+
+E 	= 	4
+6E 	= 	20
+
+//
+400~7FF	=	0
+E 	=	FC
+
+//
+//set sprite data(send to OAM) 0x200~0x2FF
+
+//step 2355
+D 	=	4
+
+15~1B	=	0
+1C		=	FF
+1D~23	=	0
+24		= 	FF
+....
+
+
+//step 2423
+ppu addr 2000
+0	
+ppu addr 2001
+0
+...
+0
+//step 7566
+ 2101 = 0
+//step 12887 
+220B = 0
+//step 43361
+2BFF =0
+//step 43466
+Sound Channel reg = F
+
+
+//step 43468
+Joysteick 2 = C0
+
+//step 43794 
+2000 = B0
+

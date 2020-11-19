@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/src/6502_simple/6502.cpp
+config.h
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/src/6502_simple/config.h
+
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/src/6502_simple/config.h
+

@@ -1,0 +1,242 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Feb 09 00:55:08 2015
+# Process ID: 9688
+# Log file: C:/Users/Administrator/Desktop/joystick_lz_final/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/joystick_lz_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.xpr
+INFO: [Project 1-313] Project file moved from 'E:/zyh/joystick_lz' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_bentch_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim/sim_1/behav'
+"xvlog -m64 -prj test_bentch_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+ERROR: [VRFC 10-1412] syntax error near always_ff [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:34]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_bentch_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim/sim_1/behav'
+"xvlog -m64 -prj test_bentch_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module time_counter
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:56]
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:66]
+ERROR: [VRFC 10-46] c10 is already declared [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:66]
+ERROR: [VRFC 10-1040] module time_counter ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:46]
+INFO: [VRFC 10-311] analyzing module joy_counter
+ERROR: [VRFC 10-1040] module joy_counter ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:78]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_bentch_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim/sim_1/behav'
+"xvlog -m64 -prj test_bentch_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module time_counter
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:56]
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:66]
+ERROR: [VRFC 10-46] c10 is already declared [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:66]
+ERROR: [VRFC 10-1040] module time_counter ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:46]
+INFO: [VRFC 10-311] analyzing module joy_counter
+ERROR: [VRFC 10-1040] module joy_counter ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:78]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_bentch_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim/sim_1/behav'
+"xvlog -m64 -prj test_bentch_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module time_counter
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:56]
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:66]
+INFO: [VRFC 10-311] analyzing module joy_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/imports/new/joystick.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module get_clk
+INFO: [VRFC 10-311] analyzing module joystick
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/test_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bentch_cnt
+INFO: [VRFC 10-311] analyzing module test_wait_sig
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/test_bentch_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bentch_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module shift_left_register
+ERROR: [VRFC 10-1412] syntax error near ( [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:49]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:53]
+ERROR: [VRFC 10-1412] syntax error near <= [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:55]
+ERROR: [VRFC 10-1040] module shift_left_register ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:41]
+INFO: [VRFC 10-311] analyzing module shif_in_reg
+ERROR: [VRFC 10-1040] module shif_in_reg ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:59]
+INFO: [VRFC 10-311] analyzing module shif_out_reg
+ERROR: [VRFC 10-1040] module shif_out_reg ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:79]
+INFO: [VRFC 10-311] analyzing module joy_data
+ERROR: [VRFC 10-1040] module joy_data ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:101]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_bentch_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim/sim_1/behav'
+"xvlog -m64 -prj test_bentch_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module time_counter
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:56]
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:66]
+INFO: [VRFC 10-311] analyzing module joy_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/imports/new/joystick.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module get_clk
+INFO: [VRFC 10-311] analyzing module joystick
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/test_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bentch_cnt
+INFO: [VRFC 10-311] analyzing module test_wait_sig
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/test_bentch_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bentch_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module shift_left_register
+ERROR: [VRFC 10-1412] syntax error near 0 [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:55]
+ERROR: [VRFC 10-1040] module shift_left_register ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:41]
+INFO: [VRFC 10-311] analyzing module shif_in_reg
+ERROR: [VRFC 10-1040] module shif_in_reg ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:59]
+INFO: [VRFC 10-311] analyzing module shif_out_reg
+ERROR: [VRFC 10-1040] module shif_out_reg ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:79]
+INFO: [VRFC 10-311] analyzing module joy_data
+ERROR: [VRFC 10-1040] module joy_data ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:101]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_bentch_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim/sim_1/behav'
+"xvlog -m64 -prj test_bentch_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module time_counter
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:56]
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:66]
+INFO: [VRFC 10-311] analyzing module joy_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/imports/new/joystick.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module get_clk
+INFO: [VRFC 10-311] analyzing module joystick
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/test_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bentch_cnt
+INFO: [VRFC 10-311] analyzing module test_wait_sig
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/test_bentch_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bentch_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_left_register
+INFO: [VRFC 10-311] analyzing module joy_data
+ERROR: [VRFC 10-1412] syntax error near ( [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:118]
+ERROR: [VRFC 10-1315] redeclaration of ansi port reset is not allowed [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:118]
+ERROR: [VRFC 10-1040] module joy_data ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:101]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_bentch_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim/sim_1/behav'
+"xvlog -m64 -prj test_bentch_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module time_counter
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:56]
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:66]
+INFO: [VRFC 10-311] analyzing module joy_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/imports/new/joystick.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module get_clk
+INFO: [VRFC 10-311] analyzing module joystick
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/test_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bentch_cnt
+INFO: [VRFC 10-311] analyzing module test_wait_sig
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/test_bentch_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bentch_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_left_register
+INFO: [VRFC 10-311] analyzing module joy_data
+ERROR: [VRFC 10-1412] syntax error near ( [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:118]
+ERROR: [VRFC 10-1315] redeclaration of ansi port reset is not allowed [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:118]
+ERROR: [VRFC 10-1040] module joy_data ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:101]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_bentch_control' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.sim/sim_1/behav'
+"xvlog -m64 -prj test_bentch_control_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module time_counter
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:56]
+WARNING: [VRFC 10-986] literal value truncated to fit in 4 bits [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv:66]
+INFO: [VRFC 10-311] analyzing module joy_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/imports/new/joystick.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module get_clk
+INFO: [VRFC 10-311] analyzing module joystick
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/test_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bentch_cnt
+INFO: [VRFC 10-311] analyzing module test_wait_sig
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/test_bentch_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bentch_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_left_register
+INFO: [VRFC 10-311] analyzing module joy_data
+ERROR: [VRFC 10-1412] syntax error near ( [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:118]
+ERROR: [VRFC 10-1315] redeclaration of ansi port reset is not allowed [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:118]
+ERROR: [VRFC 10-1040] module joy_data ignored due to previous errors [C:/Users/Administrator/Desktop/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv:101]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 09 01:34:57 2015...

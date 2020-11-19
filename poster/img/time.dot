@@ -1,0 +1,21 @@
+digraph time{
+	rankdir=LR;
+	NMI[label="PPU create NMI",shape="Mrecord",color="snow",style="filled"];
+	cpu[label="CPU interruption subroutines\n sends data to PPU",
+		shape="Mrecord",
+		style="filled",
+		color="snow"];
+	NMI->cpu;
+	ppu[label="PPU puts data of the 1st row\n into double scanline buffer",
+		shape="Mrecord",
+		style="filled",
+		color="snow"];
+	cpu->ppu;
+	vga[label="VGA module fetchs and shows 1 row on screen and \nPPU creates the data of next row, reapeat 240 times",
+		shape="Mrecord",
+		style="filled",
+		color="snow"]
+	vga->NMI;
+	
+	ppu->vga;
+}

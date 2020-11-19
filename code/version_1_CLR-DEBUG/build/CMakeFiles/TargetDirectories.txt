@@ -1,0 +1,10 @@
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/build/cpu/CMakeFiles/cpu.dir
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/build/CMakeFiles/cpu_test.dir
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/build/CMakeFiles/game_test.dir
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/build/CMakeFiles/ins_test.dir
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/build/CMakeFiles/mem_test.dir
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/build/CMakeFiles/mif2bin.dir
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/build/CMakeFiles/nes2bin.dir
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/build/CMakeFiles/ppu_rom_test.dir
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/build/CMakeFiles/tank.dir
+/Users/admin/百度云同步盘/MyBook/Hardware/code/version_1_CLR-DEBUG/build/tool/CMakeFiles/tool.dir

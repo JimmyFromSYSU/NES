@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cpu_test.dir/cpu_test.cpp.o  -o cpu_test  cpu/libcpu.a tool/libtool.a 

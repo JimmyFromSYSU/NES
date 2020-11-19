@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1429808128">
+  <File Type="PWROPT-DCP" Name="CPU_PPU_CHIP_TEST_pwropt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PLACE-DCP" Name="CPU_PPU_CHIP_TEST_placed.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DRC" Name="CPU_PPU_CHIP_TEST_drc_pwropted.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="CPU_PPU_CHIP_TEST_timing_summary_routed.rpt"/>
+  <File Type="PA-TCL" Name="CPU_PPU_CHIP_TEST.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DCP" Name="CPU_PPU_CHIP_TEST_opt.dcp"/>
+  <File Type="OPT-DRC" Name="CPU_PPU_CHIP_TEST_drc_opted.rpt"/>
+  <File Type="PLACE-IO" Name="CPU_PPU_CHIP_TEST_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="CPU_PPU_CHIP_TEST_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="CPU_PPU_CHIP_TEST_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="CPU_PPU_CHIP_TEST_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="CPU_PPU_CHIP_TEST_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="CPU_PPU_CHIP_TEST_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="CPU_PPU_CHIP_TEST_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="CPU_PPU_CHIP_TEST_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="CPU_PPU_CHIP_TEST_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="CPU_PPU_CHIP_TEST_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="CPU_PPU_CHIP_TEST_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="CPU_PPU_CHIP_TEST_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="CPU_PPU_CHIP_TEST_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="CPU_PPU_CHIP_TEST_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="CPU_PPU_CHIP_TEST_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="CPU_PPU_CHIP_TEST_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="CPU_PPU_CHIP_TEST_route_status.pb"/>
+  <File Type="ROUTE-TIMING-PB" Name="CPU_PPU_CHIP_TEST_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="CPU_PPU_CHIP_TEST_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="CPU_PPU_CHIP_TEST_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="CPU_PPU_CHIP_TEST_postroute_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="CPU_PPU_CHIP_TEST.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CPU_PPU_CHIP_TEST_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CPU_PPU_CHIP_TEST_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CPU_PPU_CHIP_TEST_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="CPU_PPU_CHIP_TEST.bit"/>
+  <File Type="BG-BIN" Name="CPU_PPU_CHIP_TEST.bin"/>
+  <File Type="BITSTR-MSK" Name="CPU_PPU_CHIP_TEST.msk"/>
+  <File Type="BITSTR-RBT" Name="CPU_PPU_CHIP_TEST.rbt"/>
+  <File Type="BITSTR-NKY" Name="CPU_PPU_CHIP_TEST.nky"/>
+  <File Type="BITSTR-BMM" Name="CPU_PPU_CHIP_TEST_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="CPU_PPU_CHIP_TEST.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="CPU_PPU_CHIP_TEST.sysdef"/>
+  <File Type="BG-BGN" Name="CPU_PPU_CHIP_TEST.bgn"/>
+  <File Type="BG-DRC" Name="CPU_PPU_CHIP_TEST.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/joy_counter.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../joystick_lz_final/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_counter.sv"/>
+        <Attr Name="ImportTime" Val="1423472407"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PPU_PALETTE_FSM.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PPU_SP_FSM.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PPU_MAIN_LOOP.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PPU_BG_FSM.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DMA.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/main_loop.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/digit2seg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../new/digit2seg.sv"/>
+        <Attr Name="ImportTime" Val="1421674216"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/decoder3_8.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../new/decoder3_8.sv"/>
+        <Attr Name="ImportTime" Val="1421678299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/createHV.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/createHV.sv"/>
+        <Attr Name="ImportTime" Val="1428298588"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/joy_data.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../joystick_lz_final/joystick_lz_final/joystick_lz.srcs/sources_1/new/joy_data.sv"/>
+        <Attr Name="ImportTime" Val="1423491525"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/control.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../joystick_lz_final/joystick_lz_final/joystick_lz.srcs/sources_1/new/control.sv"/>
+        <Attr Name="ImportTime" Val="1423493882"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/joystick.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../joystick_lz_final/joystick_lz_final/joystick_lz.srcs/sources_1/new/joystick.sv"/>
+        <Attr Name="ImportTime" Val="1422807860"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PPU.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/vga.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/vga.sv"/>
+        <Attr Name="ImportTime" Val="1428300611"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/seg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../new/seg.sv"/>
+        <Attr Name="ImportTime" Val="1421897303"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CPU.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/button_input.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/CPU_PPU_CHIP_TEST.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/CPU_PPU_CHIP_TEST.sv"/>
+        <Attr Name="ImportTime" Val="1428680222"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PPU_CHIP_TEST.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pAPU.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/tank_rom/tank_prom.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/tank_rom/tank_vrom.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/tank_rom/tank_OAM.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/tank_rom/tank_vram.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/tank_rom/tank_Palette.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/counter.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../joystick_lz_final/joystick_lz_final/joystick_lz.srcs/sources_1/new/counter.sv"/>
+        <Attr Name="ImportTime" Val="1422807389"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/tank_rom/color_table.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Doc/tank_rom/tank_prom.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Doc/tank_rom/tank_vrom.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Doc/tank_rom/tank_OAM.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Doc/tank_rom/tank_vram.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Doc/tank_rom/tank_Palette.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Doc/tank_rom/color_table.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/img/Palette.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/img/VRAM.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/img/OAM.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/img/VROM.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/tank_rom/tank_prom_test.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/tank_rom/tank_prom_mid.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Doc/tank_rom/tank_pram.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="CPU_PPU_CHIP_TEST"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Doc/Nexys4_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Doc/Nexys4_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1422497648"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/Doc/Nexys4_Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="VRAM"/>
+  <BlockFileSet Type="BlockSrcs" Name="PROM"/>
+  <BlockFileSet Type="BlockSrcs" Name="PRAM"/>
+  <BlockFileSet Type="BlockSrcs" Name="COLOR_TABLE"/>
+  <BlockFileSet Type="BlockSrcs" Name="VROM"/>
+  <BlockFileSet Type="BlockSrcs" Name="Palette"/>
+  <BlockFileSet Type="BlockSrcs" Name="OAM"/>
+</GenRun>

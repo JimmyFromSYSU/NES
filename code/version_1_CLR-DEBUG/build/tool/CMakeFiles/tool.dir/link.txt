@@ -1,0 +1,2 @@
+/usr/bin/ar cr libtool.a  CMakeFiles/tool.dir/tool.cpp.o CMakeFiles/tool.dir/file_io.cpp.o
+/usr/bin/ranlib libtool.a

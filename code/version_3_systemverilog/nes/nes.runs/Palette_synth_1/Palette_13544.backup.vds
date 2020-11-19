@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Apr 09 15:26:38 2015
+# Process ID: 536
+# Log file: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/Palette_synth_1/Palette.vds
+# Journal file: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/Palette_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Palette.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.cache/wt [current_project]
+# set_property parent.project_path C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_ip C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/Palette.xci
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'Palette' generated file not found 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/Palette.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'Palette' generated file not found 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/Palette_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'Palette' generated file not found 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/Palette_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'Palette' generated file not found 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/Palette_funcsim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'Palette' generated file not found 'c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/Palette_funcsim.vhdl'. Please regenerate to continue.
+# set_property used_in_implementation false [get_files -all c:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/Palette.dcp]
+# set_property is_locked true [get_files C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/sources_1/ip/Palette/Palette.xci]
+# catch { write_hwdef -file Palette.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top Palette -part xc7a100tcsg324-1 -mode out_of_context
+Command: synth_design -top Palette -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'

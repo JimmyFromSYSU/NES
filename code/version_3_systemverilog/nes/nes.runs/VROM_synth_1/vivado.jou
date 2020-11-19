@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Apr 22 21:47:30 2015
+# Process ID: 8628
+# Log file: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VROM_synth_1/VROM.vds
+# Journal file: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VROM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source VROM.tcl

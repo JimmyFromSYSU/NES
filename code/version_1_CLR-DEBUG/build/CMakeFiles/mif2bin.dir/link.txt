@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/mif2bin.dir/format/mif2bin.cpp.o  -o mif2bin  tool/libtool.a 

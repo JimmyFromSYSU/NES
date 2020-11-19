@@ -1,0 +1,12 @@
+<Projects version="2.0">
+	<Project active="1">Tank.cfp</Project>
+	<File active="0">ppu.cpp</File>
+	<File active="0">main.cpp</File>
+	<File active="1">cpu.h</File>
+	<File active="0">ppu.h</File>
+	<File active="0">memory_manager.cpp</File>
+	<File active="0">instruction.h</File>
+	<File active="0">joystick.h</File>
+	<File active="0">memory_manager.h</File>
+	<File active="0">memory_map.h</File>
+</Projects>

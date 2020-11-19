@@ -1,0 +1,535 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Apr 21 08:37:13 2015
+# Process ID: 2860
+# Log file: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.vdi
+# Journal file: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source CPU_PPU_CHIP_TEST.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PROM_synth_1/PROM.dcp' for cell 'prom'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PRAM_synth_1/PRAM.dcp' for cell 'pram'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VROM_synth_1/VROM.dcp' for cell 'ppu_test/plb/vrom'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/OAM_synth_1/OAM.dcp' for cell 'ppu_test/oam'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/Palette_synth_1/Palette.dcp' for cell 'ppu_test/p'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/COLOR_TABLE_synth_1/COLOR_TABLE.dcp' for cell 'color_t'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VRAM_synth_1/VRAM.dcp' for cell 'ppu_test/vram'
+INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+Finished Parsing XDC File [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PROM_synth_1/PROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PRAM_synth_1/PRAM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VROM_synth_1/VROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/OAM_synth_1/OAM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/Palette_synth_1/Palette.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/COLOR_TABLE_synth_1/COLOR_TABLE.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VRAM_synth_1/VRAM.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 466.957 ; gain = 280.223
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 469.191 ; gain = 2.234
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 18d3b8e8c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.281 . Memory (MB): peak = 958.039 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 120 cells.
+Phase 2 Constant Propagation | Checksum: 17a02edde
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.574 . Memory (MB): peak = 958.039 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 574 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 30 unconnected cells.
+Phase 3 Sweep | Checksum: 14e4a08a0
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.924 . Memory (MB): peak = 958.039 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 14e4a08a0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.954 . Memory (MB): peak = 958.039 ; gain = 0.000
+Implement Debug Cores | Checksum: 14f7730b9
+Logic Optimization | Checksum: 14f7730b9
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 15 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 2 Total Ports: 30
+Ending PowerOpt Patch Enables Task | Checksum: 166e11acd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1011.109 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 166e11acd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1011.109 ; gain = 53.070
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1011.109 ; gain = 544.152
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1011.109 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST_drc_opted.rpt.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 10a1d69cb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1011.109 ; gain = 0.000
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1011.109 ; gain = 0.000
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1011.109 ; gain = 0.000
+
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1.1 Pre-Place Cells
+Phase 2.1.1.1 Pre-Place Cells | Checksum: 5f09fddd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.255 . Memory (MB): peak = 1011.109 ; gain = 0.000
+WARNING: [Place 30-568] A LUT 'cpu_test/m_fsm/dout_reg[7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	cpu_test/m_fsm/dout_reg[0] {LDCE}
+	cpu_test/m_fsm/dout_reg[1] {LDCE}
+	cpu_test/m_fsm/dout_reg[2] {LDCE}
+	cpu_test/m_fsm/dout_reg[3] {LDCE}
+	cpu_test/m_fsm/dout_reg[4] {LDCE}
+WARNING: [Place 30-568] A LUT 'cpu_test/m_fsm/fetch_BUFG_inst_i_1' is driving clock pin of 16 registers. This could lead to large hold time violations. First few involved registers are:
+	count_reg[0] {FDRE}
+	count_reg[10] {FDRE}
+	count_reg[11] {FDRE}
+	count_reg[12] {FDRE}
+	count_reg[13] {FDRE}
+WARNING: [Place 30-568] A LUT 'cpu_test/m_fsm/nmi_status_i_1' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	cpu_test/m_fsm/nmi_status_reg {FDPE}
+WARNING: [Place 30-568] A LUT 'cpu_test/a_fsm/addr_2006_hig[7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/addr_2006_hig_reg[7] {FDRE}
+	ppu_test/addr_2006_hig_reg[6] {FDRE}
+	ppu_test/addr_2006_hig_reg[5] {FDRE}
+	ppu_test/addr_2006_hig_reg[4] {FDRE}
+	ppu_test/addr_2006_hig_reg[3] {FDRE}
+WARNING: [Place 30-568] A LUT 'flag_reg_i_3' is driving clock pin of 2 registers. This could lead to large hold time violations. First few involved registers are:
+	mask_nmi_reg[0] {FDCE}
+	mask_nmi_reg[1] {FDPE}
+WARNING: [Place 30-568] A LUT 'ppu_test/psf/OAM_addr_reg[7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/psf/OAM_addr_reg[7] {LDCE}
+	ppu_test/psf/OAM_addr_reg[6] {LDCE}
+	ppu_test/psf/OAM_addr_reg[5] {LDCE}
+	ppu_test/psf/OAM_addr_reg[4] {LDCE}
+	ppu_test/psf/OAM_addr_reg[3] {LDCE}
+WARNING: [Place 30-568] A LUT 'vs/chv/ch/h_s/flag_i_2' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/flag_reg {FDCE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.1.2 IO & Clk Clean Up
+Phase 2.1.1.2 IO & Clk Clean Up | Checksum: 5f09fddd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1011.109 ; gain = 0.000
+
+Phase 2.1.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: 5f09fddd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1011.109 ; gain = 0.000
+
+Phase 2.1.1.4 Commit IO Placement
+Phase 2.1.1.4 Commit IO Placement | Checksum: ec35ab42
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1011.109 ; gain = 0.000
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1a92859c4
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1011.109 ; gain = 0.000
+
+Phase 2.1.2 Build Placer Netlist Model
+
+Phase 2.1.2.1 Place Init Design
+
+Phase 2.1.2.1.1 Init Lut Pin Assignment
+Phase 2.1.2.1.1 Init Lut Pin Assignment | Checksum: 297721738
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1011.109 ; gain = 0.000
+Phase 2.1.2.1 Place Init Design | Checksum: 1c95cf0fb
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1011.109 ; gain = 0.000
+Phase 2.1.2 Build Placer Netlist Model | Checksum: 1c95cf0fb
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1011.109 ; gain = 0.000
+
+Phase 2.1.3 Constrain Clocks/Macros
+
+Phase 2.1.3.1 Constrain Global/Regional Clocks
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 1c95cf0fb
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1011.109 ; gain = 0.000
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: 1c95cf0fb
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1011.109 ; gain = 0.000
+Phase 2.1 Placer Initialization Core | Checksum: 1c95cf0fb
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1011.109 ; gain = 0.000
+Phase 2 Placer Initialization | Checksum: 1c95cf0fb
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1011.109 ; gain = 0.000
+
+Phase 3 Global Placement
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Apr 21 08:39:02 2015
+# Process ID: 1952
+# Log file: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.vdi
+# Journal file: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source CPU_PPU_CHIP_TEST.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PROM_synth_1/PROM.dcp' for cell 'prom'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PRAM_synth_1/PRAM.dcp' for cell 'pram'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VROM_synth_1/VROM.dcp' for cell 'ppu_test/plb/vrom'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/OAM_synth_1/OAM.dcp' for cell 'ppu_test/oam'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/Palette_synth_1/Palette.dcp' for cell 'ppu_test/p'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/COLOR_TABLE_synth_1/COLOR_TABLE.dcp' for cell 'color_t'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VRAM_synth_1/VRAM.dcp' for cell 'ppu_test/vram'
+INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+Finished Parsing XDC File [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PROM_synth_1/PROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/PRAM_synth_1/PRAM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VROM_synth_1/VROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/OAM_synth_1/OAM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/Palette_synth_1/Palette.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/COLOR_TABLE_synth_1/COLOR_TABLE.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VRAM_synth_1/VRAM.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 467.484 ; gain = 281.223
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 469.719 ; gain = 2.234
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 14d8072cb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.272 . Memory (MB): peak = 958.453 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 120 cells.
+Phase 2 Constant Propagation | Checksum: 16124e7f1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.535 . Memory (MB): peak = 958.453 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 574 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 30 unconnected cells.
+Phase 3 Sweep | Checksum: 145ccb9e7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.892 . Memory (MB): peak = 958.453 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 145ccb9e7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.916 . Memory (MB): peak = 958.453 ; gain = 0.000
+Implement Debug Cores | Checksum: 15c91e8b6
+Logic Optimization | Checksum: 15c91e8b6
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 15 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 2 Total Ports: 30
+Ending PowerOpt Patch Enables Task | Checksum: 1957a4d6a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1013.316 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1957a4d6a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.316 ; gain = 54.863
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1013.316 ; gain = 545.832
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1013.316 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST_drc_opted.rpt.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: db447655
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1013.316 ; gain = 0.000
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1.1 Pre-Place Cells
+Phase 2.1.1.1 Pre-Place Cells | Checksum: 5f09fddd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.258 . Memory (MB): peak = 1013.316 ; gain = 0.000
+WARNING: [Place 30-568] A LUT 'cpu_test/m_fsm/dout_reg[7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	cpu_test/m_fsm/dout_reg[0] {LDCE}
+	cpu_test/m_fsm/dout_reg[1] {LDCE}
+	cpu_test/m_fsm/dout_reg[2] {LDCE}
+	cpu_test/m_fsm/dout_reg[3] {LDCE}
+	cpu_test/m_fsm/dout_reg[4] {LDCE}
+WARNING: [Place 30-568] A LUT 'cpu_test/m_fsm/fetch_BUFG_inst_i_1' is driving clock pin of 16 registers. This could lead to large hold time violations. First few involved registers are:
+	count_reg[0] {FDRE}
+	count_reg[10] {FDRE}
+	count_reg[11] {FDRE}
+	count_reg[12] {FDRE}
+	count_reg[13] {FDRE}
+WARNING: [Place 30-568] A LUT 'cpu_test/m_fsm/nmi_status_i_1' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	cpu_test/m_fsm/nmi_status_reg {FDPE}
+WARNING: [Place 30-568] A LUT 'cpu_test/a_fsm/addr_2006_low[7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/addr_2006_hig_reg[0] {FDRE}
+	ppu_test/addr_2006_hig_reg[1] {FDRE}
+	ppu_test/addr_2006_hig_reg[2] {FDRE}
+	ppu_test/addr_2006_hig_reg[3] {FDRE}
+	ppu_test/addr_2006_hig_reg[4] {FDRE}
+WARNING: [Place 30-568] A LUT 'flag_reg_i_3' is driving clock pin of 2 registers. This could lead to large hold time violations. First few involved registers are:
+	mask_nmi_reg[0] {FDCE}
+	mask_nmi_reg[1] {FDPE}
+WARNING: [Place 30-568] A LUT 'ppu_test/psf/OAM_addr_reg[7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/psf/OAM_addr_reg[7] {LDCE}
+	ppu_test/psf/OAM_addr_reg[6] {LDCE}
+	ppu_test/psf/OAM_addr_reg[5] {LDCE}
+	ppu_test/psf/OAM_addr_reg[4] {LDCE}
+	ppu_test/psf/OAM_addr_reg[3] {LDCE}
+WARNING: [Place 30-568] A LUT 'vs/chv/ch/h_s/flag_i_2' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/flag_reg {FDCE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.1.2 IO & Clk Clean Up
+Phase 2.1.1.2 IO & Clk Clean Up | Checksum: 5f09fddd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 2.1.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: 5f09fddd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 2.1.1.4 Commit IO Placement
+Phase 2.1.1.4 Commit IO Placement | Checksum: ec35ab42
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1013.316 ; gain = 0.000
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1145c56d1
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 2.1.2 Build Placer Netlist Model
+
+Phase 2.1.2.1 Place Init Design
+
+Phase 2.1.2.1.1 Init Lut Pin Assignment
+Phase 2.1.2.1.1 Init Lut Pin Assignment | Checksum: 202968b95
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1013.316 ; gain = 0.000
+Phase 2.1.2.1 Place Init Design | Checksum: 162fa4796
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.316 ; gain = 0.000
+Phase 2.1.2 Build Placer Netlist Model | Checksum: 162fa4796
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 2.1.3 Constrain Clocks/Macros
+
+Phase 2.1.3.1 Constrain Global/Regional Clocks
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 162fa4796
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.316 ; gain = 0.000
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: 162fa4796
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.316 ; gain = 0.000
+Phase 2.1 Placer Initialization Core | Checksum: 162fa4796
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.316 ; gain = 0.000
+Phase 2 Placer Initialization | Checksum: 162fa4796
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: c3b4264c
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: c3b4264c
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: fa1fdb5a
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 75aa19ec
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 4.4 updateClock Trees: DP
+Phase 4.4 updateClock Trees: DP | Checksum: 75aa19ec
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 4.5 Timing Path Optimizer
+Phase 4.5 Timing Path Optimizer | Checksum: f8af687e
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 4.6 Small Shape Detail Placement
+
+Phase 4.6.1 Commit Small Macros & Core Logic
+
+Phase 4.6.1.1 setBudgets
+Phase 4.6.1.1 setBudgets | Checksum: d850ba24
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 4.6.1.2 Commit Slice Clusters
+Phase 4.6.1.2 Commit Slice Clusters | Checksum: 13f0438a7
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1013.316 ; gain = 0.000
+Phase 4.6.1 Commit Small Macros & Core Logic | Checksum: 13f0438a7
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns | Checksum: 13f0438a7
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1013.316 ; gain = 0.000
+
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 13f0438a7
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1013.316 ; gain = 0.000

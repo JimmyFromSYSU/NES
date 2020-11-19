@@ -1,0 +1,131 @@
+240 lines of pixels
+
+
+     注意: 表中未被列出的位认为未被使用.
+
+
+    +---------+----------------------------------------------------------+
+    | Address | Description                                              |
+    +---------+----------------------------------------------------------+
+    |  $2000  | PPU Control Register #1 (W)                              |
+    |         |                                                          |
+    |         |    D7: Execute NMI on VBlank                             |
+    |         |           0 = Disabled                                   |
+    |         |           1 = Enabled                                    |
+    |         |    D6: PPU Master/Slave Selection --+                    |
+    |         |           0 = Master                +-- UNUSED           |
+    |         |           1 = Slave               --+                    |
+    |         |    D5: Sprite Size                                       |
+    |         |           0 = 8x8                                        |
+    |         |           1 = 8x16                                       |
+    |         |    D4: Background Pattern Table Address                  |
+    |         |           0 = $0000 (VRAM)                               |
+    |         |           1 = $1000 (VRAM)                               |
+    |         |    D3: Sprite Pattern Table Address                      |
+    |         |           0 = $0000 (VRAM)                               |
+    |         |           1 = $1000 (VRAM)                               |
+    |         |    D2: PPU Address Increment                             |
+    |         |           0 = Increment by 1                             |
+    |         |           1 = Increment by 32                            |
+    |         | D1-D0: Name Table Address                                |
+    |         |         00 = $2000 (VRAM)                                |
+    |         |         01 = $2400 (VRAM)                                |
+    |         |         10 = $2800 (VRAM)                                |
+    |         |         11 = $2C00 (VRAM)                                |
+    +---------+----------------------------------------------------------+
+    |  $2001  | PPU Control Register #2 (W)                              |
+    |         |                                                          |
+    |         | D7-D5: Full Background Colour (when D0 == 1)             |
+    |         |         000 = None  +------------+                       |
+    |         |         001 = Green              | NOTE: Do not use more |
+    |         |         010 = Blue               |       than one type   |
+    |         |         100 = Red   +------------+                       |
+    |         | D7-D5: Colour Intensity (when D0 == 0)                   |
+    |         |         000 = None            +--+                       |
+    |         |         001 = Intensify green    | NOTE: Do not use more |
+    |         |         010 = Intensify blue     |       than one type   |
+    |         |         100 = Intensify red   +--+                       |
+    |         |    D4: Sprite Visibility                                 |
+    |         |           0 = Sprites not displayed                      |
+    |         |           1 = Sprites visible                            |
+    |         |    D3: Background Visibility                             |
+    |         |           0 = Background not displayed                   |
+    |         |           1 = Background visible                         |
+    |         |    D2: Sprite Clipping                                   |
+    |         |           0 = Sprites invisible in left 8-pixel column   |
+    |         |           1 = No clipping                                |
+    |         |    D1: Background Clipping                               |
+    |         |           0 = BG invisible in left 8-pixel column        |
+    |         |           1 = No clipping                                |
+    |         |    D0: Display Type                                      |
+    |         |           0 = Colour display                             |
+    |         |           1 = Monochrome display                         |
+    +---------+----------------------------------------------------------+
+    |  $2002  | PPU Status Register (R)                                  |
+    |         |                                                          |
+    |         |    D7: VBlank Occurance                                  |
+    |         |          0 = Not occuring                                |
+    |         |          1 = In VBlank                                   |
+    |         |    D6: Sprite #0 Occurance                               |
+    |         |          0 = Sprite #0 not found                         |
+    |         |          1 = PPU has hit Sprite #0                       |
+    |         |    D5: Scanline Sprite Count                             |
+    |         |          0 = Eight (8) sprites or less on current scan-  |
+    |         |              line                                        |
+    |         |          1 = More than 8 sprites on current scanline     |
+    |         |    D4: VRAM Write Flag                                   |
+    |         |          0 = Writes to VRAM are respected                |
+    |         |          1 = Writes to VRAM are ignored                  |
+    |         |                                                          |
+    |         | NOTE: D7 is set to 0 after read occurs.                  |
+    |         | NOTE: After a read occurs, $2005 is reset, hence the     |
+    |         |       next write to $2005 will be Horizontal.            |
+    |         | NOTE: After a read occurs, $2006 is reset, hence the     |
+    |         |       next write to $2006 will be the high byte portion. |
+    |         |                                                          |
+    |         | For detailed information regarding D6, see Section 4,    |
+    |         | Subsection L.                                            |
+    +---------+----------------------------------------------------------+
+    |  $2003  | SPR-RAM Address Register (W)                             |
+    |         |                                                          |
+    |         | D7-D0: 8-bit address in SPR-RAM to access via $2004.     |
+    +---------+----------------------------------------------------------+
+    |  $2004  | SPR-RAM I/O Register (W)                                 |
+    |         |                                                          |
+    |         | D7-D0: 8-bit data written to SPR-RAM.                    |
+    +---------+----------------------------------------------------------+
+    |  $2005  | VRAM Address Register #1 (W2)                            |
+    |         |                                                          |
+    |         |  Commonly used used to "pan/scroll" the screen (sprites  |
+    |         |  excluded) horizontally and vertically. However, there   |
+    |         |  is no actual panning hardware inside the NES. This      |
+    |         |  register controls VRAM addressing lines.                |
+    |         |                                                          |
+    |         | Refer to Section 4, Subsection N, for more information.  |
+    +---------+----------------------------------------------------------+
+    |  $2006  | VRAM Address Register #2 (W2)                            |
+    |         |                                                          |
+    |         |  Commonly used to specify the 16-bit address in VRAM to  |
+    |         |  access via $2007. However, this register controls VRAM  |
+    |         |  addressing bits, and therefore should be used with      |
+    |         |  knowledge of how it works, and when it works.           |
+    |         |                                                          |
+    |         | Refer to Section 4, Subsection N, for more information.  |
+    +---------+----------------------------------------------------------+
+    |  $2007  | VRAM I/O Register (RW)                                   |
+    |         |                                                          |
+    |         | D7-D0: 8-bit data read/written from/to VRAM.             |
+    +---------+----------------------------------------------------------+
+    |  $4014  | Sprite DMA Register (W)                                  |
+    |         |                                                          |
+    |         |  Transfers 256 bytes of memory into SPR-RAM. The address |
+    |         |  read from is $100*N, where N is the value written.      |
+    +---------+----------------------------------------------------------+
+
+
+--------------------------------------- $4000 Empty--------------------------------------- $3F20 Sprite Palette--------------------------------------- $3F10 Image Palette--------------------------------------- $3F00 Empty--------------------------------------- $3000 Attribute Table 3--------------------------------------- $2FC0 Name Table 3 (32x30 tiles)--------------------------------------- $2C00 Attribute Table 2--------------------------------------- $2BC0 Name Table 2 (32x30 tiles)--------------------------------------- $2800 Attribute Table 1--------------------------------------- $27C0 Name Table 1 (32x30 tiles)--------------------------------------- $2400 Attribute Table 0--------------------------------------- $23C0 Name Table 0 (32x30 tiles)--------------------------------------- $2000
+ Pattern Table 1 (256x2x8, may be VROM)--------------------------------------- $1000 Pattern Table 0 (256x2x8, may be VROM)--------------------------------------- $0000
+
+Most programs write to a copy of OAM somewhere in CPU addressable RAM (often $0200-$02FF) and then copy it to OAM each frame using the OAM_DMA ($4014) register. Writing value to this register causes the DMA circuitry inside the 2A03/07 to fully initialize the OAM by writing OAMDATA ($2004) 256 times using successive bytes from memory page value (i.e., starting at address $100×value). The CPU is suspended while the transfer is taking place.
+
+

@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Apr 22 10:57:54 2015
+# Process ID: 5380
+# Log file: C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.vdi
+# Journal file: C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source CPU_PPU_CHIP_TEST.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/PROM_synth_1/PROM.dcp' for cell 'prom'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/PRAM_synth_1/PRAM.dcp' for cell 'pram'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/VROM_synth_1/VROM.dcp' for cell 'ppu_test/plb/vrom'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/OAM_synth_1/OAM.dcp' for cell 'ppu_test/oam'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/Palette_synth_1/Palette.dcp' for cell 'ppu_test/p'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/COLOR_TABLE_synth_1/COLOR_TABLE.dcp' for cell 'color_t'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/VRAM_synth_1/VRAM.dcp' for cell 'ppu_test/vram'
+INFO: [Netlist 29-17] Analyzing 166 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/PROM_synth_1/PROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/PRAM_synth_1/PRAM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/VROM_synth_1/VROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/OAM_synth_1/OAM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/Palette_synth_1/Palette.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/COLOR_TABLE_synth_1/COLOR_TABLE.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.runs/VRAM_synth_1/VRAM.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 492.426 ; gain = 292.895
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'

@@ -1,0 +1,140 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+Process ID: 5292
+
+Current time: 	4/22/15 12:23:50 PM
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.4/tps/win64/jre
+
+User name: 	Administrator
+User directory: C:/Users/Administrator/Desktop/PROJECT/FPGA/nes
+User country: 	US
+User language: 	en
+User locale: 	en_US
+Vivado preferences path: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	183 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 483 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.xpr 
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 45 MB (+44979kb) [00:00:04]
+// [Engine Memory]: 414 MB (+282245kb) [00:00:04]
+// [Engine Memory]: 430 MB (+17059kb) [00:00:04]
+// [GUI Memory]: 48 MB (+3108kb) [00:00:05]
+// [Engine Memory]: 454 MB (+25669kb) [00:00:05]
+// [Engine Memory]: 463 MB (+8523kb) [00:00:05]
+// [GUI Memory]: 57 MB (+8969kb) [00:00:06]
+// [Engine Memory]: 476 MB (+14536kb) [00:00:06]
+// [Engine Memory]: 480 MB (+4067kb) [00:00:06]
+// Tcl Message: open_project C:/Users/Administrator/Desktop/PROJECT/FPGA/nes/nes.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'. 
+// [Engine Memory]: 496 MB (+16433kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 497 MB. GUI used memory: 40 MB. Current time: 4/22/15 12:23:50 PM
+// [Engine Memory]: 497 MB (+1363kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 57 MB (+24kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 57 MB (+584kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 58 MB (+1124kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 59 MB (+584kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 60 MB (+562kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 60 MB (+584kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 61 MB (+1146kb) [00:00:07]
+// [GUI Memory]: 62 MB (+562kb) [00:00:07]
+// [GUI Memory]: 62 MB (+584kb) [00:00:07]
+// [GUI Memory]: 63 MB (+562kb) [00:00:07]
+// [GUI Memory]: 63 MB (+614kb) [00:00:07]
+// [GUI Memory]: 64 MB (+562kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 65 MB (+1146kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 66 MB (+584kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 66 MB (+564kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 68 MB (+1734kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 68 MB (+385kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Project name: nes; location: C:/Users/Administrator/Desktop/PROJECT/FPGA/nes; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 786.145 ; gain = 191.801 
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// [Engine Memory]: 501 MB (+3903kb) [00:00:08]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 25); // w:Y (v:I, ch:JFrame)
+// a:a (ch:JFrame): Critical Messages: addNotify
+// [GUI Memory]: 71 MB (+2646kb) [00:00:12]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 502 MB (+675kb) [00:00:13]
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 26, false); // w:Y (v:I, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// [GUI Memory]: 75 MB (+4898kb) [00:00:15]
+// [GUI Memory]: 80 MB (+4407kb) [00:00:16]
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// ae:g (ch:JFrame): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, ae:g)
+// cm:N (ae:g):  Open Server : addNotify
+// Elapsed time: 16 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, cm:N)
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, cm:N)
+// [GUI Memory]: 81 MB (+1348kb) [00:00:35]
+// [GUI Memory]: 82 MB (+1009kb) [00:00:40]

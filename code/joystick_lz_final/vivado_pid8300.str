@@ -1,0 +1,143 @@
+/*
+
+Vivado v2014.4 (64-bit)
+SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+Process ID: 8300
+
+Current time: 	2/8/15 10:12:55 PM
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.8.0_05 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.4/tps/win64/jre
+
+User name: 	Administrator
+User directory: E:/zyh/joystick_lz
+User country: 	US
+User language: 	en
+User locale: 	en_US
+Vivado preferences path: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2014.4/vivado.ini
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2014.4/layouts/application
+
+GUI allocated memory:	192 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 466 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cm:N (ch:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project E:/zyh/joystick_lz/joystick_lz.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 47 MB (+46367kb) [00:00:03]
+// [Engine Memory]: 419 MB (+288352kb) [00:00:03]
+// [Engine Memory]: 452 MB (+34635kb) [00:00:04]
+// [GUI Memory]: 48 MB (+1507kb) [00:00:04]
+// [Engine Memory]: 466 MB (+14536kb) [00:00:04]
+// [GUI Memory]: 50 MB (+1946kb) [00:00:05]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'. 
+// [Engine Memory]: 477 MB (+10739kb) [00:00:06]
+// [Engine Memory]: 477 MB (+286kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 51 MB (+786kb) [00:00:06]
+// [Engine Memory]: 480 MB (+3084kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 51 MB (+855kb) [00:00:06]
+// [Engine Memory]: 482 MB (+2125kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 52 MB (+837kb) [00:00:06]
+// [Engine Memory]: 484 MB (+1777kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 53 MB (+854kb) [00:00:06]
+// [GUI Memory]: 53 MB (+412kb) [00:00:06]
+// [GUI Memory]: 54 MB (+854kb) [00:00:06]
+// [GUI Memory]: 55 MB (+824kb) [00:00:06]
+// [GUI Memory]: 55 MB (+412kb) [00:00:06]
+// [GUI Memory]: 56 MB (+854kb) [00:00:06]
+// [GUI Memory]: 57 MB (+412kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 57 MB (+854kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 58 MB (+826kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 59 MB (+739kb) [00:00:06]
+// [Engine Memory]: 485 MB (+1265kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 485 MB (+335kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 485 MB (+73kb) [00:00:06]
+// [Engine Memory]: 486 MB (+425kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 486 MB (+266kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 487 MB (+1531kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 488 MB (+913kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 488 MB (+380kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Project name: joystick_lz; location: E:/zyh/joystick_lz; part: xc7a100tcsg324-3
+// HMemoryUtils.trashcanNow. Engine heap size: 489 MB. GUI used memory: 36 MB. Current time: 2/8/15 10:12:57 PM
+// [Engine Memory]: 489 MB (+45kb) [00:00:07]
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog("Open Project"); // cm:N (ch:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 491 MB (+2297kb) [00:00:07]
+// [Engine Memory]: 496 MB (+5246kb) [00:00:09]
+// Elapsed time: 21 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_bentch_control (test_bentch_control.sv), jstk - joystick (joystick.sv)]", 3); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_bentch_control (test_bentch_control.sv), jstk - joystick (joystick.sv), cnt - joy_counter (joy_counter.sv)]", 6, false); // u:k (I:JPanel, ch:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:I, ch:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // Z:JMenuItem (ag:JPopupMenu, ch:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cm (ch:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'test_bentch_control' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/zyh/joystick_lz/joystick_lz.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/zyh/joystick_lz/joystick_lz.sim/sim_1/behav' 
+// [GUI Memory]: 63 MB (+4603kb) [00:00:35]
+// TclEventType: LAUNCH_SIM
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '' file for more information. 
+// a:a (ch:JFrame): Critical Messages: addNotify
+// [GUI Memory]: 71 MB (+7568kb) [00:00:36]
+dismissDialog("Run Simulation"); // d:cm (ch:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_bentch_control (test_bentch_control.sv), jstk - joystick (joystick.sv)]", 3, true); // u:k (I:JPanel, ch:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_bentch_control (test_bentch_control.sv), jstk - joystick (joystick.sv)]", 3, true, false, false, false, false, true); // u:k (I:JPanel, ch:JFrame) - Double Click - Node
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, ch:JFrame)
+// [Engine Memory]: 497 MB (+1847kb) [00:00:49]
+selectCodeEditor("joystick.sv", 113, 424); // bi:J (JPanel:JComponent, ch:JFrame)
+// [GUI Memory]: 73 MB (+2580kb) [00:01:01]
+// [Engine Memory]: 498 MB (+159kb) [00:01:01]
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // W:an (F:R, ch:JFrame)

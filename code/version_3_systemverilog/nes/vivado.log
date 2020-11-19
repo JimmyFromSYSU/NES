@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Apr 24 10:40:05 2015
+# Process ID: 5340
+# Log file: C:/Users/Administrator/Desktop/Demo/nes/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/Demo/nes\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/Demo/nes/nes.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/nfxz/Desktop/Project/FPGA/nes' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Administrator/Desktop/Demo/nes/CPU_TEST_behav.wcfg', nor could it be found using path 'C:/Users/nfxz/Desktop/Project/FPGA/nes/CPU_TEST_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2014.4/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 734.598 ; gain = 149.539
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 24 10:45:10 2015...
+t:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2014.4
+  **** Build date : Nov 18 2014-18:09:44
+    ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+
+****** Xilinx hw_server v2014.4
+  **** Build date : Nov 18 2014-18:09:44
+    ** Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274592585A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274592585A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274592585A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/Demo/nes/nes.runs/impl_1/CPU_PPU_CHIP_TEST.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {C:/Users/Administrator/Desktop/Demo/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {C:/Users/Administrator/Desktop/Demo/nes/nes.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/Demo/bit/CPU_PPU_CHIP_TEST.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-32] Done pin status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/PROM_synth_1/PROM.dcp' for cell 'prom'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/PRAM_synth_1/PRAM.dcp' for cell 'pram'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/VROM_synth_1/VROM.dcp' for cell 'ppu_test/plb/vrom'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/OAM_synth_1/OAM.dcp' for cell 'ppu_test/oam'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/Palette_synth_1/Palette.dcp' for cell 'ppu_test/p'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/COLOR_TABLE_synth_1/COLOR_TABLE.dcp' for cell 'color_t'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/VRAM_synth_1/VRAM.dcp' for cell 'ppu_test/vram'
+INFO: [Netlist 29-17] Analyzing 171 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Users/Administrator/Desktop/Demo/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/Demo/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/PROM_synth_1/PROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/PRAM_synth_1/PRAM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/VROM_synth_1/VROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/OAM_synth_1/OAM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/Palette_synth_1/Palette.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/COLOR_TABLE_synth_1/COLOR_TABLE.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/Demo/nes/nes.runs/VRAM_synth_1/VRAM.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1093.547 ; gain = 348.414
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1093.547 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 24 15:03:55 2015...

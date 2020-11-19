@@ -1,0 +1,111 @@
+digraph ppu_fsm{
+	//rankdir = LR;
+	subgraph cluster_main{
+		node [style=filled,color=wheat,shape="Mrecord"];
+		label = "Control FSM";
+		style=filled;
+		color=snow;
+		WAIT_Vsync;
+		WAIT_CPU;
+		GEN_BG;
+		GEN_SP;
+		WAIT_Hsync;
+
+		WAIT_Vsync->WAIT_CPU[label="NMI"];
+		WAIT_Vsync->GEN_BG[label="Vsync"];
+		WAIT_CPU->GEN_BG[label="[10000clks]"];
+		WAIT_CPU->WAIT_CPU;
+		GEN_BG->GEN_SP;
+		GEN_BG->GEN_BG;
+		GEN_SP->GEN_SP;
+		GEN_SP->WAIT_Hsync;
+		WAIT_Hsync->WAIT_Hsync;
+		WAIT_Hsync->GEN_BG[label="Hsync"];
+		WAIT_Hsync->WAIT_Vsync[label="[240lines]"];
+		{rank = same; GEN_BG; WAIT_Hsync;}
+	}
+		
+	subgraph cluster_bg{
+		node [style=filled,color=white,shape="Mrecord"];
+		label = "Background FSM";
+		style=filled;
+		color=linen;
+		WAIT_Vsync;
+		BG_WAIT;
+		AttributeTable_Access;
+		NameTable_Access;
+		BG_WAIT_Palette;
+		BG_WAIT->BG_WAIT;
+		BG_WAIT->AttributeTable_Access;
+		AttributeTable_Access->NameTable_Access;
+		NameTable_Access->BG_WAIT_Palette;
+		BG_WAIT_Palette->NameTable_Access;
+		BG_WAIT_Palette->AttributeTable_Access[label="[4]"];
+		BG_WAIT_Palette->BG_WAIT[label="[32]"];
+	}
+
+	//GEN_BG->BG_WAIT[color="red",label="start bg"];
+	//BG_WAIT_Palette->GEN_BG[color="red",label ="end bg"];
+
+	subgraph cluster_sp{
+		node [style=filled,color=white,shape="Mrecord"];
+		label = "Sprite FSM";
+		style=filled;
+		color=linen;
+		SP_WAIT;
+		SP_WAIT_Palette;
+		DONE_ONE_SP;
+		SP_WAIT->SP_WAIT;
+	/*	
+		SP_WAIT->OAM_ACCESS_Y;
+		OAM_ACCESS_Y;
+		OAM_ACCESS_Tile_Index;
+		OAM_ACCESS_Color_Index;
+		OAM_ACCESS_X;
+		OAM_ACCESS_Y->DONE_ONE_SP;
+		OAM_ACCESS_Y->OAM_ACCESS_Tile_Index;
+		OAM_ACCESS_Tile_Index->OAM_ACCESS_Color_Index;
+		OAM_ACCESS_Color_Index->OAM_ACCESS_X;
+		OAM_ACCESS_X->SP_WAIT_Palette;
+		DONE_ONE_SP->OAM_ACCESS_Y;
+	*/
+
+		SP_WAIT->OAM_ACCESS;
+		OAM_ACCESS;
+		OAM_ACCESS->DONE_ONE_SP;
+		OAM_ACCESS->OAM_ACCESS;
+		OAM_ACCESS->SP_WAIT_Palette;
+		DONE_ONE_SP->OAM_ACCESS;
+
+		SP_WAIT_Palette->DONE_ONE_SP;
+		DONE_ONE_SP->SP_WAIT[
+			taillabel="[64sprites]"
+		];
+	}
+	
+	//GEN_SP->SP_WAIT[color="red",label="start sp"];
+	//DONE_ONE_SP->GEN_SP[color="red",label="end sp"];
+
+	subgraph cluster_palette{
+		node [style=filled,color=white,shape="Mrecord"];
+		label = "Palette FSM";
+		style=filled;
+		color=wheat;
+		Palette_WAIT;
+		VROM_ACCESS_1;
+		VROM_ACCESS_2;
+		GEN_PIXEL;
+		Palette_WAIT->Palette_WAIT;
+		Palette_WAIT->VROM_ACCESS_1;
+		VROM_ACCESS_1->VROM_ACCESS_2;
+		VROM_ACCESS_2->GEN_PIXEL;
+		GEN_PIXEL->GEN_PIXEL;
+		GEN_PIXEL->Palette_WAIT[taillabel="[8bits]"];
+	}
+	//NameTable_Access->Palette_WAIT[color="red",label="start palette"];
+	//GEN_PIXEL->BG_WAIT_Palette[color="red",label="end palette"];
+
+	//OAM_ACCESS_Tile_Index->Palette_WAIT[color="red",label="start palette"];
+	//GEN_PIXEL->SP_WAIT_Palette[color="red",label = "end palette"];
+
+}

@@ -1,0 +1,134 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Apr 06 17:59:16 2015
+# Process ID: 12064
+# Log file: C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.runs/impl_1/CPU_chip_test.vdi
+# Journal file: C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source CPU_chip_test.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.runs/PROM_synth_1/PROM.dcp' for cell 'prom'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.runs/PRAM_synth_1/PRAM.dcp' for cell 'pram'
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:179]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.runs/PROM_synth_1/PROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/Administrator/Desktop/FPGA/nes-vivado/nes/nes.runs/PRAM_synth_1/PRAM.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 477.977 ; gain = 277.711
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'

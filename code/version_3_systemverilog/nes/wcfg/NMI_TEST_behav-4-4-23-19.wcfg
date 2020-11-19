@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="NMI_TEST_behav_1.wdb" id="1">
+         <top_modules>
+            <top_module name="NMI_TEST" />
+            <top_module name="\$unit_1 " />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject db_ref_id="1" fp_name="/NMI_TEST/count" type="array">
+      <obj_property name="ElementShortName">count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">count[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/NMI_TEST/state" type="array">
+      <obj_property name="ElementShortName">state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group206" type="group">
+      <obj_property name="label">CMD</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/fetch" type="logic">
+         <obj_property name="ElementShortName">fetch</obj_property>
+         <obj_property name="ObjectShortName">fetch</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/INS" type="array">
+         <obj_property name="ElementShortName">INS[7:0]</obj_property>
+         <obj_property name="ObjectShortName">INS[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/ins_name" type="array">
+         <obj_property name="ElementShortName">ins_name[5:0]</obj_property>
+         <obj_property name="ObjectShortName">ins_name[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/addr_mode" type="array">
+         <obj_property name="ElementShortName">addr_mode[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_mode[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group205" type="group">
+      <obj_property name="label">BUS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/write" type="logic">
+         <obj_property name="ElementShortName">write</obj_property>
+         <obj_property name="ObjectShortName">write</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/addr" type="array">
+         <obj_property name="ElementShortName">addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/din" type="array">
+         <obj_property name="ElementShortName">din[7:0]</obj_property>
+         <obj_property name="ObjectShortName">din[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/dout" type="array">
+         <obj_property name="ElementShortName">dout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group195" type="group">
+      <obj_property name="label">REG</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/A" type="array">
+         <obj_property name="ElementShortName">A[7:0]</obj_property>
+         <obj_property name="ObjectShortName">A[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/X" type="array">
+         <obj_property name="ElementShortName">X[7:0]</obj_property>
+         <obj_property name="ObjectShortName">X[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/Y" type="array">
+         <obj_property name="ElementShortName">Y[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/SP" type="array">
+         <obj_property name="ElementShortName">SP[7:0]</obj_property>
+         <obj_property name="ObjectShortName">SP[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/PC" type="array">
+         <obj_property name="ElementShortName">PC[15:0]</obj_property>
+         <obj_property name="ObjectShortName">PC[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/STATUS" type="array">
+         <obj_property name="ElementShortName">STATUS[7:0]</obj_property>
+         <obj_property name="ObjectShortName">STATUS[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/NMI_TEST/nclk" type="logic">
+      <obj_property name="ElementShortName">nclk</obj_property>
+      <obj_property name="ObjectShortName">nclk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/NMI_TEST/nmi_status" type="logic">
+      <obj_property name="ElementShortName">nmi_status</obj_property>
+      <obj_property name="ObjectShortName">nmi_status</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/NMI_TEST/nmi" type="logic">
+      <obj_property name="ElementShortName">nmi</obj_property>
+      <obj_property name="ObjectShortName">nmi</obj_property>
+   </wvobject>
+   <wvobject fp_name="group204" type="group">
+      <obj_property name="label">useless</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/din_prom" type="array">
+         <obj_property name="ElementShortName">din_prom[7:0]</obj_property>
+         <obj_property name="ObjectShortName">din_prom[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/din_pram" type="array">
+         <obj_property name="ElementShortName">din_pram[7:0]</obj_property>
+         <obj_property name="ObjectShortName">din_pram[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/din_ppu_reg" type="array">
+         <obj_property name="ElementShortName">din_ppu_reg[7:0]</obj_property>
+         <obj_property name="ObjectShortName">din_ppu_reg[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" fp_name="/NMI_TEST/en" type="logic">
+         <obj_property name="ElementShortName">en</obj_property>
+         <obj_property name="ObjectShortName">en</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

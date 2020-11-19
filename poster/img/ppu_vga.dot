@@ -1,0 +1,5 @@
+digraph ppu_vga{
+	compound = true
+	
+	subgraph 
+}

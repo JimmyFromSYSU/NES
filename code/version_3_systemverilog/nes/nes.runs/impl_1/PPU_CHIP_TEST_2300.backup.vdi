@@ -1,0 +1,704 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu Apr 09 19:58:52 2015
+# Process ID: 10928
+# Log file: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/PPU_CHIP_TEST.vdi
+# Journal file: C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source PPU_CHIP_TEST.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VROM_synth_1/VROM.dcp' for cell 'ppu_test/plb/vrom'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/OAM_synth_1/OAM.dcp' for cell 'ppu_test/oam'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/Palette_synth_1/Palette.dcp' for cell 'ppu_test/p'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/COLOR_TABLE_synth_1/COLOR_TABLE.dcp' for cell 'color_t'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/SCAN_LINE_BUF_synth_1/SCAN_LINE_BUF.dcp' for cell 'slb'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VRAM_synth_1/VRAM.dcp' for cell 'ppu_test/vram'
+INFO: [Netlist 29-17] Analyzing 104 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:179]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SS'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:212]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:212]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SS'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:213]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MOSI'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:215]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MOSI'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MISO'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MISO'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCK'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:221]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SCK'. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:222]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+Finished Parsing XDC File [C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.srcs/constrs_1/imports/Doc/Nexys4_Master.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VROM_synth_1/VROM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/OAM_synth_1/OAM.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/Palette_synth_1/Palette.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/COLOR_TABLE_synth_1/COLOR_TABLE.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/SCAN_LINE_BUF_synth_1/SCAN_LINE_BUF.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/VRAM_synth_1/VRAM.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 457.262 ; gain = 1.930
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 16c8f1ee5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 925.566 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 35 cells.
+Phase 2 Constant Propagation | Checksum: 2d03640e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.087 . Memory (MB): peak = 925.566 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 372 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 28 unconnected cells.
+Phase 3 Sweep | Checksum: e470a0c9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.235 . Memory (MB): peak = 925.566 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: e470a0c9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.241 . Memory (MB): peak = 925.566 ; gain = 0.000
+Implement Debug Cores | Checksum: 12dbb340d
+Logic Optimization | Checksum: 12dbb340d
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+INFO: [Pwropt 34-203] Number of nets are not same before and after processing of findDistanceFromSourceAndDest. Before: 0 After: 5
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 7 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 3 Total Ports: 14
+Ending PowerOpt Patch Enables Task | Checksum: c80f03c9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 943.352 ; gain = 0.000
+Ending Power Optimization Task | Checksum: c80f03c9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 943.352 ; gain = 17.785
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 46 Warnings, 40 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 943.352 ; gain = 488.020
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 943.352 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/PPU_CHIP_TEST_drc_opted.rpt.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 4b00b017
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 943.352 ; gain = 0.000
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 943.352 ; gain = 0.000
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 943.352 ; gain = 0.000
+
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1.1 Pre-Place Cells
+Phase 2.1.1.1 Pre-Place Cells | Checksum: 141bcf4a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.063 . Memory (MB): peak = 943.352 ; gain = 0.000
+WARNING: [Place 30-568] A LUT 'vs/chv/cv/flag_i_2' is driving clock pin of 1 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/flag_reg {FDRE}
+WARNING: [Place 30-568] A LUT 'ppu_test/psf/OAM_addr_reg[7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
+	ppu_test/psf/OAM_addr_reg[7] {LDCE}
+	ppu_test/psf/OAM_addr_reg[6] {LDCE}
+	ppu_test/psf/OAM_addr_reg[5] {LDCE}
+	ppu_test/psf/OAM_addr_reg[4] {LDCE}
+	ppu_test/psf/OAM_addr_reg[3] {LDCE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.1.2 IO & Clk Clean Up
+Phase 2.1.1.2 IO & Clk Clean Up | Checksum: 141bcf4a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.776 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 2.1.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: 141bcf4a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.778 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 2.1.1.4 Commit IO Placement
+Phase 2.1.1.4 Commit IO Placement | Checksum: 52aa07c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.779 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: be84c22c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.780 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 2.1.2 Build Placer Netlist Model
+
+Phase 2.1.2.1 Place Init Design
+
+Phase 2.1.2.1.1 Init Lut Pin Assignment
+Phase 2.1.2.1.1 Init Lut Pin Assignment | Checksum: 1a144249b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.851 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 2.1.2.1 Place Init Design | Checksum: 194c74380
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 2.1.2 Build Placer Netlist Model | Checksum: 194c74380
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 2.1.3 Constrain Clocks/Macros
+
+Phase 2.1.3.1 Constrain Global/Regional Clocks
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 194c74380
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: 194c74380
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 2.1 Placer Initialization Core | Checksum: 194c74380
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 2 Placer Initialization | Checksum: 194c74380
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 15aa67bc3
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 15aa67bc3
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: c08156db
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: a4e97ba2
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 4.4 updateClock Trees: DP
+Phase 4.4 updateClock Trees: DP | Checksum: a4e97ba2
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 4.5 Timing Path Optimizer
+Phase 4.5 Timing Path Optimizer | Checksum: e55cd437
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 4.6 Small Shape Detail Placement
+
+Phase 4.6.1 Commit Small Macros & Core Logic
+
+Phase 4.6.1.1 setBudgets
+Phase 4.6.1.1 setBudgets | Checksum: 80e90499
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 4.6.1.2 Commit Slice Clusters
+Phase 4.6.1.2 Commit Slice Clusters | Checksum: 11a38ac9c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 4.6.1 Commit Small Macros & Core Logic | Checksum: 11a38ac9c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.6.2 Clock Restriction Legalization for Leaf Columns | Checksum: 11a38ac9c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.6.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 11a38ac9c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 4.6 Small Shape Detail Placement | Checksum: 11a38ac9c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 4.7 Re-assign LUT pins
+Phase 4.7 Re-assign LUT pins | Checksum: 11a38ac9c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 4 Detail Placement | Checksum: 11a38ac9c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 13a57f0db
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 5.2 Post Commit Optimization
+
+Phase 5.2.1 updateClock Trees: PCOPT
+Phase 5.2.1 updateClock Trees: PCOPT | Checksum: 13a57f0db
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 5.2.2 Post Placement Optimization
+
+Phase 5.2.2.1 Post Placement Timing Optimization
+
+Phase 5.2.2.1.1 Restore Best Placement
+Phase 5.2.2.1.1 Restore Best Placement | Checksum: 182dce4c6
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 965.563 ; gain = 22.211
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-8.798. For the most accurate timing information please run report_timing.
+Phase 5.2.2.1 Post Placement Timing Optimization | Checksum: 182dce4c6
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 5.2.2 Post Placement Optimization | Checksum: 182dce4c6
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 5.2 Post Commit Optimization | Checksum: 182dce4c6
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 182dce4c6
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 182dce4c6
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 5.5 Placer Reporting
+
+Phase 5.5.1 Restore STA
+Phase 5.5.1 Restore STA | Checksum: 182dce4c6
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 5.5 Placer Reporting | Checksum: 182dce4c6
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 965.563 ; gain = 22.211
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 13eb9285f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 965.563 ; gain = 22.211
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 13eb9285f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 965.563 ; gain = 22.211
+Ending Placer Task | Checksum: f371c508
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 965.563 ; gain = 22.211
+INFO: [Common 17-83] Releasing license: Implementation
+56 Infos, 48 Warnings, 40 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 965.563 ; gain = 22.211
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.123 . Memory (MB): peak = 965.563 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 965.563 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 965.563 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 965.563 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 13a7ff849
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:28 . Memory (MB): peak = 1092.227 ; gain = 126.664
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 13a7ff849
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1093.449 ; gain = 127.887
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 13a7ff849
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1101.371 ; gain = 135.809
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: c994639a
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1114.863 ; gain = 149.301
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-8.23  | TNS=-64.9  | WHS=-0.164 | THS=-1.66  |
+
+Phase 2 Router Initialization | Checksum: f365d3e8
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1ffb0f72b
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:29 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 63
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1729d586b
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 1114.863 ; gain = 149.301
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-8.52  | TNS=-67.4  | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 1ec8e81b9
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 1c0e9d1b2
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 1114.863 ; gain = 149.301
+Phase 4.1.2 GlobIterForTiming | Checksum: 1f3a2a74f
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 1114.863 ; gain = 149.301
+Phase 4.1 Global Iteration 0 | Checksum: 1f3a2a74f
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 78
+ Number of Nodes with overlaps = 64
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 1e05c3013
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:31 . Memory (MB): peak = 1114.863 ; gain = 149.301
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-8.44  | TNS=-66.7  | WHS=N/A    | THS=N/A    |
+
+
+Phase 4.2.2 GlobIterForTiming
+
+Phase 4.2.2.1 Update Timing
+Phase 4.2.2.1 Update Timing | Checksum: 141edc939
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:31 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 4.2.2.2 Fast Budgeting
+Phase 4.2.2.2 Fast Budgeting | Checksum: 1a5e1c0aa
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:31 . Memory (MB): peak = 1114.863 ; gain = 149.301
+Phase 4.2.2 GlobIterForTiming | Checksum: 162769c18
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:31 . Memory (MB): peak = 1114.863 ; gain = 149.301
+Phase 4.2 Global Iteration 1 | Checksum: 162769c18
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:31 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 86
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+
+Phase 4.3.1 Update Timing
+Phase 4.3.1 Update Timing | Checksum: 22f75b17e
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-8.49  | TNS=-67.1  | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: cb1ca307
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+Phase 4 Rip-up And Reroute | Checksum: cb1ca307
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 5 Delay CleanUp
+
+Phase 5.1 Update Timing
+Phase 5.1 Update Timing | Checksum: 15a0fb2e6
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-8.36  | TNS=-66.1  | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5 Delay CleanUp | Checksum: 1e356975d
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 6 Clock Skew Optimization
+Phase 6 Clock Skew Optimization | Checksum: 1e356975d
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 1ac564306
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-8.25  | TNS=-65.1  | WHS=0.129  | THS=0      |
+
+Phase 7 Post Hold Fix | Checksum: 1ac564306
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0994038 %
+  Global Horizontal Routing Utilization  = 0.126456 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 34.2342%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 39.6396%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 36.7647%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 45.5882%, No Congested Regions.
+Phase 8 Route finalize | Checksum: 1bed87047
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1bed87047
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1b9cc6b77
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-8.25  | TNS=-65.1  | WHS=0.129  | THS=0      |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 11 Post Router Timing | Checksum: 1b9cc6b77
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+INFO: [Route 35-16] Router Completed Successfully
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:32 . Memory (MB): peak = 1114.863 ; gain = 149.301
+INFO: [Common 17-83] Releasing license: Implementation
+70 Infos, 49 Warnings, 40 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:33 . Memory (MB): peak = 1114.863 ; gain = 149.301
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 1114.863 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/nfxz/Desktop/Project/FPGA/nes/nes.runs/impl_1/PPU_CHIP_TEST_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 09 19:59:54 2015...

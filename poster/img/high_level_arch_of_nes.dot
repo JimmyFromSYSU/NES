@@ -1,0 +1,69 @@
+digraph nes_arch{
+	compound = true;
+	rankdir=LR;
+	subgraph cluster_cpu{
+		node [style=filled,color=wheat];
+		style=filled;
+		color = salmon;
+		label = "CPU";
+	
+		ins_fsm[shape=box,label="Instruction FSM"];
+		addr_fsm[shape=box,label="Address FSM"];
+		ins_fsm->addr_fsm;		
+	}
+	
+
+	pram[shape=box,label="PRAM",color="skyblue",style="filled"];
+
+	subgraph cluster_ppu{
+		node [style=filled,color="skyblue"];
+		label = "PPU";
+		style=filled;
+		color = salmon;
+		OAM[shape=box,label="OAM"];
+		vram[shape=box,label="VRAM"];
+		palette[shape=box,label="Palette"];
+	}
+
+	subgraph cluster_cartridge{
+		node [style=filled,color="lightgray"];
+		color = salmon;
+
+		style=filled;
+		label ="Cartridge";
+		vrom[shape=box,label="VROM"];
+		prom[shape=box,label="PROM"];
+	}
+
+	DMA[shape=box,label="DMA",color="salmon",style="filled"];
+	vga_signal[shape=box,label="VGA signal generator",style="filled",color="salmon"];	
+	vga[shape=box,label="VGA",style="filled",color="green"];	
+	
+	color_table[shape=box,label="Color Table",style="filled",color="lightgray"];
+	double_buffer[shape=box,label="Double Scanline Buffer",style="filled",color="skyblue"];
+	
+	//edge
+	prom->ins_fsm[lhead=cluster_cpu,color="darkgreen"];
+	ins_fsm->pram[ltail=cluster_cpu,dir=both,color="darkgreen"];
+	addr_fsm->vram[ltail=cluster_cpu,label="[register]",color="darkgreen"];
+	vram->addr_fsm[ltail=cluster_ppu,lhead=cluster_cpu,label="NMI"];
+	
+	
+	OAM->vrom[label="SP Index",color="red"];
+	vram->vrom[label="BG Index",color="red"];
+	//VGA_signal
+	vga_signal->vram[lhead=cluster_ppu,color="red",label="Vsync,Hsync"];
+	vga_signal->vga[color="red",label="Vsync,Hsync"];
+	vga_signal->double_buffer[color="red",label="Vsync,Hsync"];
+	//image
+	vrom->palette[color="darkgreen",label="tile,pos"];
+	palette->double_buffer[color="darkgreen",label="color index"];
+	double_buffer->color_table[color="red",label="color index"];
+	color_table->vga[color="darkgreen",label="RGB color"];
+	//DMA
+	pram->DMA[color="darkgreen"];
+	DMA->OAM[color="darkgreen"];
+	{rank=same;color_table;vga;vga_signal;}
+	{rank=same;pram;DMA;}
+}
+

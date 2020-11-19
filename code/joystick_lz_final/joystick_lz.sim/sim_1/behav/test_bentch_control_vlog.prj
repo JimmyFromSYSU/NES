@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../joystick_lz.srcs/sources_1/new/joy_counter.sv"
+sv xil_defaultlib  "../../../joystick_lz.srcs/sources_1/new/control.sv"
+sv xil_defaultlib  "../../../joystick_lz.srcs/sources_1/imports/new/joystick.sv"
+sv xil_defaultlib  "../../../joystick_lz.srcs/sources_1/new/test_cnt.sv"
+sv xil_defaultlib  "../../../joystick_lz.srcs/sources_1/new/test_bentch_control.sv"
+sv xil_defaultlib  "../../../joystick_lz.srcs/sources_1/new/joy_data.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

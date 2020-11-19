@@ -1,0 +1,1 @@
+/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/nes2bin.dir/format/nes2bin.cpp.o  -o nes2bin  

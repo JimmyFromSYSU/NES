@@ -1,0 +1,12 @@
+digraph G{
+	reset->reset_addr;
+	reset_addr->fetch;
+	fetch->execute;
+	fetch->load_data;
+	execute->fetch;
+	load_data->execute;
+	execute->save_data;
+	save_data->fetch;
+	fetch->save_data;
+	load_data->save_data;
+}
