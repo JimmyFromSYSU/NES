@@ -1,1 +1,1 @@
-# NES
+![poster](poster/poster.jpeg)
